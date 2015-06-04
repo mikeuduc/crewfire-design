@@ -45,6 +45,10 @@ table{
 	background: linear-gradient(90deg, #FEA800 10%, #FF4B19 90%);
 }
 
+.navbar-brand>img {
+  display: block;
+  width: 25px;
+}
 
 .navbar-default .navbar-nav>li>a {
 	color: #fff;
@@ -126,7 +130,7 @@ position: relative;
 }
 
 #crewfire-logo{
-	padding: 10px 10px;
+	padding: 12px 10px;
 }
 
 
