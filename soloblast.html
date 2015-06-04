@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CrewFire Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+   	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+   	<script type="text/javascript">
+   		$(function(){
+   			$(".tip").tooltip({delay: {show: 1000, hide: 100}});
+   		});
+   	</script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+
+ <!-- /NAVBAR -->
+
+		 <nav class="navbar navbar-default" role="navigation">
+			<div class="container">	
+			  <!-- Brand and toggle get grouped for better mobile display -->
+			  <div class="navbar-header">
+			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			      <span class="sr-only">Toggle navigation</span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			    </button>
+			    <a class="navbar-brand" id="crewfire-logo" href="#"><img src="images/crewfirexs.png"></img></a>
+			  </div>
+
+			  <!-- Collect the nav links, forms, and other content for toggling -->
+			  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			    <ul class="nav navbar-nav">
+			      <li class="active"><a href="blasts.html">Reports</a></li>
+			      <li><a href="people.html">People</a></li>
+			      <li><a href="recruit.html">Recruit</a></li>
+				  <li><button type="button" class="btn btn-success navbar-btn" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-bullhorn"></span> New Blast</button></li>
+		    </ul>
+
+		    <!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			        <h4 class="modal-title" id="myModalLabel"><input type="email" class="form-control" id="PostName" placeholder="Post Name"></input></h4>
+			      </div>
+			      <div class="modal-body">
+			      	<div class="btn-group">
+					  <button type="button" class="btn btn-default">Tweet</button>
+					  <button type="button" class="btn btn-default">FB Post</button>
+					</div>
+			        <input type="text" class="form-control" id="PostBody" placeholder="What do you want to share?">
+			      </div>
+			      <div class="modal-footer">
+			      	<a href="#" class="tip" data-toggle="tooltip" data-placement"top" title="Upload a Photo"><span class="glyphicon glyphicon-camera"></span></a>
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			        <button type="button" class="btn btn-primary" data-dismiss="modal"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;Send</button>
+			      </div>
+			    </div><!-- /.modal-content -->
+			  </div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+
+			    <ul class="nav navbar-nav navbar-right">
+			      <li><a href="#">Help</a></li>
+			      <li class="dropdown">
+			        <div class="btn-group">
+					  <button type="button" class="btn btn-default dropdown-toggle navbar-btn" data-toggle="dropdown">
+					    USC Events <span class="caret"></span>
+					  </button>
+					  <ul class="dropdown-menu" role="menu">
+					    <li><a href="#">Account</a></li>
+					    <li class="divider"></li>
+					    <li><a href="#">Sign Out</a></li>
+					  </ul>
+					</div>
+			      </li>
+			    </ul>
+			  </div><!-- /.navbar-collapse -->
+			</div><!-- /container -->
+		</nav>
+
+<!-- /NAVBAR -->
+
+	<div class="container page-container col-lg-10 col-lg-offset-1">	
+		<div class="row back-button">
+			<div class="col-md-2">
+				<a href="blasts.html"><span class="glyphicon glyphicon-chevron-left"></span> Blasts</a>
+			</div><!-- /col-md-3 -->
+		</div>
+
+		<div class="row" id="soloBlastHeaderRow">
+			<div id="soloBlastHeader">
+				<h1>Thursday, November 28</h1>
+			</div><!-- /col-md-3 -->
+		</div><!-- /row -->
+
+
+		<div class="media">
+		  <a class="pull-left" href="#">
+		    <img class="media-object" src="images/tw.png" alt="Tweet">
+		  </a>
+		  <div class="media-body">
+			<div class="panel panel-info panel-twitter">
+			  <div class="panel-heading">
+			    <h3 class="panel-title">Tweet With Link <small>8:03pm</small></h3>
+			  </div>
+			  <div class="panel-body">
+			    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque justo arcu, malesuada eu magna id, egestas rutrum leo. In hac habitasse platea dictumst. Aliquam erat volutpat. Duis elementum imperdiet luctus. <a href="#">Ut tristique</a>
+			  </div>
+			  <div class="table-responsive">
+			      <table class="table table-bordered">
+				    <tbody>
+				      <tr>
+			            <td><h3>23 <small> Pushers </small></h3> </td>
+			            <td><h3>6 <small> Retweets </small></h3> </td>
+			            <td><h3>12 <small> Favorites </small></h3> </td>
+			            <td><h3>2 <small> Mentions </small></h3> </td>
+			            <td><h3>18 <small> Clicks </small></h3> </td>
+			            <td><h3>35,000 <small><a class="tip" data-toggle="tooltip" data-placement"top" title="Reach = Total # of Potential Impressions... The total number of followers of all of your pushers and retweeters, combined."> Reach <span class="glyphicon glyphicon-question-sign"></span></a> </small></h3> </td>
+	          		  </tr>
+				    </tbody>
+				  </table>
+			  </div>
+			</div><!-- .panel -->
+		  </div><!-- .media-body -->
+		</div><!-- .media -->
+
+	<div clss="row">
+		<div class="col-md-10 col-md-offset-1">
+			<div class="table-responsive">
+				<table class="table table-hover">
+			        <thead>
+			          <tr>
+			            <th>#</th>
+			            <th>Name</th>
+			            <th>Email</th>
+			            <th>Points</th>
+			            <th>RTs</th>
+			            <th>Favs</th>
+			            <th>Mns</th>
+			            <th>Clx</th>
+			            <th>Rch</th>
+			          </tr>
+			        </thead>
+			        <tbody>
+			          <tr>
+			            <td>1</td>
+			            <td><a href="person.html">Mark Shesser</a></td>
+			            <td>Mark@Shesser.com</td>
+			            <td>5,214</td>
+			            <td>25</td>
+			            <td>73</td>
+			            <td>25</td>
+			            <td>73</td>
+			            <td>25</td>
+			          </tr>
+			          <tr>
+			            <td>2</td>
+			            <td>Andrew Duch</td>
+			            <td>Andrew@Duch.com</td>
+			            <td>4,240</td>
+			            <td>23</td>
+			            <td>36</td>
+			            <td>25</td>
+			            <td>73</td>
+			            <td>25</td>
+			          </tr>
+			          <tr>
+			            <td>3</td>
+			            <td>Mike McCabe</td>
+			            <td>Mike@SimpleCrew.com</td>
+			            <td>4,200</td>
+			            <td>23</td>
+			            <td>36</td>
+			            <td>25</td>
+			            <td>73</td>
+			            <td>25</td>
+			          </tr>
+			          <tr>
+			            <td>4</td>
+			            <td>Alan VanToai</td>
+			            <td>Alan@SimpleCrew.com</td>
+			            <td>4,102</td>
+			            <td>23</td>
+			            <td>36</td>
+			            <td>25</td>
+			            <td>73</td>
+			            <td>25</td>
+			          </tr>
+			          <tr>
+			            <td>5</td>
+			            <td>Josh Klotz</td>
+			            <td>Jklotz4@gmail.com</td>
+			            <td>3,801</td>
+			            <td>23</td>
+			            <td>36</td>
+			            <td>25</td>
+			            <td>73</td>
+			            <td>25</td>
+			          </tr>
+			          <tr>
+			            <td>6</td>
+			            <td>Matt Lilja</td>
+			            <td>MatthewLilja88@gmail.com</td>
+			            <td>3,240</td>
+			            <td>23</td>
+			            <td>36</td>
+			            <td>25</td>
+			            <td>73</td>
+			            <td>25</td>
+			          </tr>
+			          <tr>
+			            <td>7</td>
+			            <td>Greg Caulfield</td>
+			            <td>gtc123@gmail.com</td>
+			            <td>3,120</td>
+			            <td>23</td>
+			            <td>36</td>
+			            <td>25</td>
+			            <td>73</td>
+			            <td>25</td>
+			          </tr>
+			          <tr>
+			            <td>8</td>
+			            <td>Greg Ormont</td>
+			            <td>Greg@PigeonsPlaying.com</td>
+			            <td>3,110</td>
+			            <td>23</td>
+			            <td>36</td>
+			            <td>25</td>
+			            <td>73</td>
+			            <td>25</td>
+			          </tr>
+			          <tr>
+			            <td>9</td>
+			            <td>Jeremy Schon</td>
+			            <td>Jeremy@PigeonsPlaying.com</td>
+			            <td>2,980</td>
+			            <td>23</td>
+			            <td>36</td>
+			            <td>25</td>
+			            <td>73</td>
+			            <td>25</td>
+			          </tr>
+			          <tr>
+			            <td>10</td>
+			            <td>Dan Schwartz</td>
+			            <td>Dan@PigeonsPlaying.com</td>
+			            <td>2,802</td>
+			            <td>23</td>
+			            <td>36</td>
+			            <td>25</td>
+			            <td>73</td>
+			            <td>25</td>
+			          </tr>
+			        </tbody>
+				</table>
+
+			</div><!-- /.table-responsive -->
+
+			<div class="row">
+				<div>
+					<ul class="pagination">
+					  <li><a href="#">&laquo;</a></li>
+					  <li class="active"><a href="#">1</a></li>
+					  <li><a href="#">2</a></li>
+					  <li><a href="#">3</a></li>
+					  <li><a href="#">4</a></li>
+					  <li><a href="#">5</a></li>
+					  <li><a href="#">&raquo;</a></li>
+					</ul>
+				</div>
+			</div><!-- /.row -->
+
+		</div><!-- .col-md-10 -->
+	</div><!-- .row -->
+
+	</div><!-- /container -->
+
+  </body>
+</html>

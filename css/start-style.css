@@ -1,0 +1,32 @@
+.start-logo img{
+	width: 80px;
+	margin: 0 auto;
+	display: block;
+}
+
+.start-header{
+	margin-bottom: 45px;	
+}
+
+.start-header p{
+	font-size: 20px;
+}
+
+.start-form label{
+	font-size: 16px;
+}
+
+.start-form .btn{
+	width: 100%;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	font-size: 18px;
+}
+
+.start-container{
+	background: #fff;
+	border-radius: 3px;
+	margin-top: 40px;
+	box-shadow: 0 0 6px rgba(0,0,0,0.15);
+	padding: 30px;
+}
