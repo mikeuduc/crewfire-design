@@ -98,10 +98,21 @@
 	<div class="container page-container col-lg-8 col-lg-offset-2">	
 
 		<div class="row back-button">
-			<div class="col-md-2">
+			<div class="pull-left">
 				<a href="groups.html"><span class="glyphicon glyphicon-chevron-left"></span> Groups</a>
 			</div><!-- /col-md-3 -->
-		</div>
+
+			<div class="pull-right" id="nav-pills-small">
+				<ul class="nav nav-pills pull-right">
+				  <li class="active"><a href="#">Day</a></li>
+				  <li><a href="#">Week</a></li>
+				  <li><a href="#">Month</a></li>
+				  <li><a href="#">Year</a></li>
+				  <li><a href="#">All</a></li>
+				  <li><a href="#">Custom</a></li>
+				</ul>
+			</div>
+		</div><!-- .nav-pills-small"-->
 
 
 		<div class="row" id="soloGroupHeaderRow">
@@ -109,6 +120,31 @@
 				<h1>Baltimore <a href="#" data-toggle="modal" data-target="#editGroupName"><span class="glyphicon glyphicon-pencil"></span></a></h1>
 			</div><!-- /col-md-3 -->
 		</div><!-- /row -->
+
+		<div class="row">
+			<div class="group-stats">
+
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<span class="group-stat">15</span>
+					</div>
+					<div class="panel-footer">People</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<span class="group-stat">25</span>
+					</div>
+					<div class="panel-footer">Blasts</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<span class="group-stat">1,203</span>
+					</div>
+					<div class="panel-footer">Points</div>
+				</div>
+
+			</div>
+		</div>
 
 		<!-- ------------- MODAL ------------ -->
 		<div class="modal fade" id="editGroupName" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
