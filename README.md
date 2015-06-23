@@ -1,4 +1,10 @@
 # crewfire-design
+## June 23, 2015
+- Updated groups.html (updated modal to use <li> instead of <td>)
+- Created css/groups.css
+- Updated sologroup.html (Added #pushed stat)
+
+
 ## June 22, 2015
 - Updated Blasts.html (includes new group tags for blasts)
 - Created Blasts.css
