@@ -241,6 +241,30 @@ position: relative;
 	box-shadow: none;
 }
 
+.checkbox-list {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  max-height: 310px;
+  overflow: auto;
+}
+
+.checkbox-list li {
+  width: 170px;
+  height: 27px;
+  display: inline-block;
+  margin: 0px 6px 0px 0px;
+  overflow: hidden;
+}
+
+.checkbox-list input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.checkbox-list label{
+	font-size: 16px;
+}
+
 /*
 .modal-body .form-control{
 	padding-top: 15px;
