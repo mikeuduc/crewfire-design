@@ -1,4 +1,11 @@
 # crewfire-design
+
+## July 7, 2015
+- Created push-success.html (agent's push success)
+- Created css/push-success.css
+- Created push-error.html
+- Created css/push-error.css
+
 ## June 23, 2015
 - Updated groups.html (updated modal to use <li> instead of <td>)
 - Created css/groups.css
