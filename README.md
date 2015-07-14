@@ -1,5 +1,9 @@
 # crewfire-design
 
+## July 14, 2015
+- Updated index.html (Push This Blast button)
+- Updated blasts.css (Push This Blast button)
+
 ## July 7, 2015
 - Created push-success.html (agent's push success)
 - Created css/push-success.css
