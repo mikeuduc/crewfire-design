@@ -1,5 +1,12 @@
 # crewfire-design
 
+## July 24, 2015
+- Created agent-pending-blasts-empty.html 
+- Created agent-shared-blasts.empty.html
+
+(note: the alert had no padding on top. I considered adding the padding to the top of the tabbed-content div, but I figured that might mess up your existing styles. I temporarily just added a new div with a set height to act as a vertical spacer.)
+
+
 ## July 14, 2015
 - Updated index.html (Push This Blast button)
 - Updated blasts.css (Push This Blast button)
