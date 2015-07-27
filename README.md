@@ -1,5 +1,12 @@
 # crewfire-design
 
+## July 27, 2015
+- Updated login.html (includes link to forgot-password)
+- Created forgot-password.html
+- Created forgot-password.css
+- Created forgot-password-success.html
+- Created forgot-password-form.html
+
 ## July 24, 2015
 - Created agent-pending-blasts-empty.html 
 - Created agent-shared-blasts.empty.html
