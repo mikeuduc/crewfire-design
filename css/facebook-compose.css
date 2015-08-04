@@ -1,0 +1,72 @@
+.start-logo img{
+	width: 80px;
+	margin: 0 auto 25px;
+	display: block;
+}
+
+.start-header{
+	margin-bottom: 25px;	
+}
+
+.start-header p{
+	font-size: 20px;
+	text-align: center;
+}
+
+.suggested-post .well{
+	margin-bottom: 3px;
+}
+
+.suggested-post p, .suggested-image p{
+	font-size: 16px;
+}
+
+.suggested-image{
+	margin-top: 40px;
+}
+
+.suggested-image img{
+	max-height: 250px;
+}
+
+.start-form{
+	margin-top: 50px;
+}
+
+.start-form .form-group{
+	margin-bottom: 10px;
+}
+
+.start-form label{
+	font-size: 16px;
+}
+
+.start-container{
+	background: #fff;
+	border-radius: 3px;
+	margin-top: 40px;
+	box-shadow: 0 0 6px rgba(0,0,0,0.15);
+	padding: 30px;
+}
+
+.start-form button{
+    margin-left: 15px;
+}
+
+.btn-facebook{
+    color: #ffffff;
+    background-color: #4e69a2;
+    border-color: #004b63;
+}
+
+.btn-facebook:hover{
+    color: #ffffff;
+    background-color: #3C5589;
+    border-color: #004b63;
+}
+
+.btn-facebook:active{
+    color: #ffffff;
+    background-color: #3C5589;
+    border-color: #004b63;
+}

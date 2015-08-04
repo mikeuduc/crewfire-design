@@ -1,5 +1,16 @@
 # crewfire-design
 
+## August 4, 2015
+- Updated forgot-password.html (updated a repsonsive setting)
+- Updated forgot-password-success.html (updated a repsonsive setting)
+- Updated forgot-password-form.html (updated a repsonsive setting)
+- Created facebook-compose.html
+- Created facebook-compose.css
+- Created facebook-compose-with-image.html
+- Created twitter-compose.html
+- Created twitter-compose.css
+- Created twitter-compose-with-image.html
+
 ## July 27, 2015
 - Updated login.html (includes link to forgot-password)
 - Created forgot-password.html
