@@ -1,5 +1,9 @@
 # crewfire-design
 
+## August 6, 2016
+- Created push-blast-modal.html
+- Created push-blast-modal.css
+
 ## August 4, 2015
 - Updated forgot-password.html (updated a repsonsive setting)
 - Updated forgot-password-success.html (updated a repsonsive setting)

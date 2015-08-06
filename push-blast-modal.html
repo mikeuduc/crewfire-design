@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Get Started - CrewFire</title>
+    <title>CrewFire Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
-	<link href="css/facebook-compose.css" rel="stylesheet">
+	<link href="css/push-blast-modal.css" rel="stylesheet">
+
     <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
    	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+   	<script type="text/javascript">
+   		$(function(){
+   			$(".tip").tooltip({delay: {show: 1000, hide: 100}});
+   		});
+   	</script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -16,24 +24,27 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 
-  </head> 
+  </head>
   <body>
 
-	<div class="container">	
-		<div class="start-container col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+  	<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".push-blast-modal">Push This Blast</button>
 
-			<div class="start-logo">
+	<div class="modal fade push-blast-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	  <div class="modal-dialog modal-lg">
+	    <div class="modal-content push-blast-modal-content">
+	     
+	    	<div class="start-logo">
 				<img src="images/symbol.svg">
 			</div>
 
 			<div class="start-header">
-				<h1 class="text-center">Post to Facebook</h1>
-				<p>$NAME from $COMPANY-NAME has invited you to share this post on Facebook!</p>
+				<h1 class="text-center">Post to Twitter</h1>
+				<p>$NAME from $COMPANY-NAME has invited you to share this post on Twitter!</p>
 			</div>
 			
 			<!--
 			<div class="error">
-				<div class="alert alert-danger" role="alert">Please fill out the Facebook post!</div>
+				<div class="alert alert-danger" role="alert">Please fill out the Twitter post!</div>
 			</div>
 			-->
 
@@ -56,7 +67,7 @@
 
 				<div class="form-group pull-right">
 					<input type="checkbox" value="" checked> Include suggested image
-					<button type="submit" class="btn btn-facebook" data-toggle="modal" data-target="#myModal">Post to Facebook</button>
+					<button type="submit" class="btn btn-twitter" data-toggle="modal" data-target="#myModal">Post to Twitter</button>
 				</div>
 
 				<!-- Modal -->
@@ -77,12 +88,16 @@
 				    </div>
 				  </div>
 				</div>
+				<!-- /Modal -->
+
+				<div class="clearfix"></div>
 
 			</form>
 
-		</div><!-- /start-container -->
-		
-	</div><!-- /container -->
+	    </div>
+	  </div>
+	</div>
+
 
   </body>
 </html>
