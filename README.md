@@ -3,6 +3,8 @@
 ## August 6, 2016
 - Created push-blast-modal.html
 - Created push-blast-modal.css
+- Updated index.html (expirey date UI)
+- Updated blasts.css (expirey date UI)
 
 ## August 4, 2015
 - Updated forgot-password.html (updated a repsonsive setting)

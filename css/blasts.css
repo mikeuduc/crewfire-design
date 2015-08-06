@@ -9,3 +9,16 @@
 .share-now a{
 	color: #fff;
 }
+
+.expiration-date{
+	margin-left: 13px;
+    font-size: 14px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+.expiration-date:hover{
+	color: #ffffff;
+	cursor: pointer;
+}
