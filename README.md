@@ -5,6 +5,7 @@
 - Created push-blast-modal.css
 - Updated index.html (expirey date UI)
 - Updated blasts.css (expirey date UI)
+- Updated recruit.html (singup form help text)
 
 ## August 4, 2015
 - Updated forgot-password.html (updated a repsonsive setting)
