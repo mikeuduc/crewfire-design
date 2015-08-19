@@ -1,6 +1,9 @@
 # crewfire-design
 
-## August 6, 2016
+## August 19, 2015
+- Updated agent-pending-blasts-empty.html (Added alerts for connecting to Facebook & Twitter) 
+
+## August 6, 2015
 - Created push-blast-modal.html
 - Created push-blast-modal.css
 - Updated index.html (expirey date UI)
