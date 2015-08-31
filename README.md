@@ -1,5 +1,9 @@
 # crewfire-design
 
+## August 31, 2015
+- Updated company-billing-settings.html (Added new plans)
+- Created company-billing-settings.css
+
 ## August 19, 2015
 - Updated agent-pending-blasts-empty.html (Added alerts for connecting to Facebook & Twitter) 
 
