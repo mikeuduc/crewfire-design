@@ -1,5 +1,9 @@
 # crewfire-design
 
+## September 2, 2015
+- Updated start.html (Added billing)
+- Updated style.css
+
 ## August 31, 2015
 - Updated company-billing-settings.html (Added new plans)
 - Created company-billing-settings.css

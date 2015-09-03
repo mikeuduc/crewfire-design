@@ -28,9 +28,9 @@
 			
 			<div class="text-center start-header">
 				<h2>Get Started With CrewFire</h2>
-				<p>You'll be up an running in seconds. No credit card necessary</p>
+				<p>You'll be dominating Facebook and Twitter in no time.</p>
 			</div>
-
+<!--  
 			<div class="error">
 				<div class="alert alert-danger" role="alert">Please enter your full name!</div>
 				<div class="alert alert-danger" role="alert">Please enter a company or organization!</div>
@@ -38,14 +38,18 @@
 				<div class="alert alert-danger" role="alert">This email address is already taken!</div>
 				<div class="alert alert-danger" role="alert">Please enter a valid password!</div>
 			</div>
-			
+-->
+
 			<form class="start-form">
+
+				<h3>1. Account Details</h3>
+
 				<div class="form-group has-error">
 					<label>Your full name</label>
 					<input type="text" class="form-control" name="name" autofocus placeholder="Benjamin Franklin">
 				</div>
 				<div class="form-group has-error">
-					<label>Company or organization</label>
+					<label>Company or organization name</label>
 					<input type="text" class="form-control" name="company" placeholder="The Franklin Group">
 				</div>
 				<div class="form-group has-error">
@@ -53,11 +57,113 @@
 					<input type="email" class="form-control" name="email" placeholder="bennie@franklin.com">
 				</div>
 				<div class="form-group has-error">
+					<label>Phone number</label>
+					<input type="text" class="form-control" name="phone number" placeholder="(301)867-5309">
+				</div>
+				<div class="form-group has-error">
 					<label>Password</label>
 					<input type="password" class="form-control" name="password" placeholder="Easy to remember, hard to guess">
 				</div>
 
-				<button type="submit" class="btn btn-success">Start my free CrewFire trial</button>
+				<div style="height: 15px"></div>
+
+				<h3>2. Billing Info</h3>
+
+				<div class="row">
+					<div class="form-group has-error col-xs-8">
+						<label>Card Number</label>
+						<input class="form-control" type="text" size="20" data-stripe="number" placeholder="123456789123"/>
+					</div>
+					<div class="form-group has-error col-xs-4">
+						<label>CVV</label>
+						<input class="form-control" type="text" size="4" data-stripe="cvc" placeholder="123"/>
+					</div>
+				</div>	
+				<div class="row">
+					<div class="col-xs-2">
+						<label>Expiration</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group has-error col-xs-5">
+					    <select class="form-control" placeholder="Month">
+						  <option>01 - January</option>
+						  <option>02 - February</option>
+						  <option>03 - March</option>
+						  <option>04 - April</option>
+						  <option>05 - May</option>
+						  <option>06 - June</option>
+						  <option>07 - July</option>
+						  <option>08 - August</option>
+						  <option>09 - September</option>
+						  <option>10 - October</option>
+						  <option>11 - November</option>
+						  <option>12 - December</option>
+						</select>
+					</div>
+					<div class="form-group has-error col-xs-7">
+						<select class="form-control" placeholder="Month">
+						  <option>2016</option>
+						  <option>2017</option>
+						  <option>2018</option>
+						  <option>2019</option>
+						  <option>2020</option>
+						  <option>2021</option>
+						  <option>2022</option>
+						  <option>2023</option>
+						  <option>2024</option>
+						  <option>2025</option>
+						  <option>2026</option>
+						  <option>2027</option>
+						  <option>2028</option>
+						  <option>2029</option>
+						  <option>2030</option>
+						  <option>2031</option>
+						  <option>2032</option>
+						  <option>2033</option>
+						  <option>2034</option>
+						  <option>2035</option>
+						  <option>2036</option>
+						  <option>2037</option>
+						  <option>2038</option>
+						  <option>2039</option>
+						  <option>2040</option>
+						</select>
+					</div>
+
+				</div>
+
+				<div style="height: 15px"></div>
+
+				<h3>3. Order Summary</h3>
+
+				<div class="well">
+					<table>
+						<tr>
+							<td class="col-xs-2"><strong>Plan:</strong></td>
+						 	<td>Premium</td>
+					 	</tr>
+					 	<tr>
+							<td class="col-xs-2"><strong>Tier:</strong></td>
+						 	<td>51 - 80 Supporters</td>
+					 	</tr>
+					 	<tr>
+							<td class="col-xs-2"><strong>Pricing:</strong></td>
+						 	<td>$224/month</td>
+					 	</tr>
+					 </table>
+				</div>
+
+				<div style="height: 15px"></div>
+
+				<button type="submit" class="btn btn-success">Create CrewFire Account</button>
+
+				<div style="height: 7px"></div>
+
+				<div class="text-center">
+					All plans backed by our 30-day, money-back guarantee.
+				</div>
+
 			</form>
 
 		</div><!-- /start-container -->
