@@ -229,9 +229,29 @@
 			        </div>
 		    	</form>
 
-	    	<div class="page-header"><h3>Cancel Your Plan</h3></div>
+	    	<div class="page-header"><h3>Cancel Your Account</h3></div>
 	    	<p>Note: if you cancel, your account will be deleted at the end of your billing cycle, and all your data will be lost.</p>
-	    	<a href="#" class="btn btn-danger">Cancel My Plan</a>
+
+	    	<button type="button" class="btn btn-danger navbar-btn" data-toggle="modal" data-target="#cancelModal">Cancel My Account</button></li>
+		    </ul>
+
+		    <!-- Modal -->
+			<div class="modal fade" id="cancelModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h3>Are you sure you want to cancel?</h3>
+			      </div>
+			      <div class="modal-body">
+			      	<p>Your account will be deleted at the end of your billing cycle, and all your data will be lost. <strong>This can not be undone!</strong></p>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-success" data-dismiss="modal">No, don't cancel my account</button>
+			        <button type="button" class="btn btn-danger" data-dismiss="modal">Yes, cancel my account</button>
+			      </div>
+			    </div><!-- /.modal-content -->
+			  </div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
 
 	    	<div style="height:45px"></div>
 
