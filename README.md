@@ -1,5 +1,10 @@
 # crewfire-design
 
+## October 6, 2015, continued
+- Created denied-billing.html (show to owner when billing is denied)
+- Created owner-suspended.html (show to owner when account is manually suspended)
+- Created agent-suspended.html (show to agent when account is suspended or billing denied)
+
 ## October 6, 2015
 - Created zombie-billing.html (with Reactivate option)
 - Updated blasts.html (SITEWIDE ZOMBIE ALERT!)
@@ -8,7 +13,7 @@
 - Created no-companies.html
 
 - Updated start.html (auto-upgrade disclaimer)
-- Updated plans-and-billing.html (auto-upgrade disclaimer)
+- Updated plans-and-billing.html (auto-upgrade disclaimer, cancel modal)
 
 ###Restructured
 - new app/ directory vs superadmin/ directory
