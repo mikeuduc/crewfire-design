@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
+	<link href="css/social-networks.css" rel="stylesheet">
     <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
    	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 
@@ -98,68 +99,69 @@
 	    <!-- left column -->
 	    <div class="col-md-3 col-sm-4 col-xs-12 no-right-gutter">
 			<ul class="nav nav-stacked">
-				<li class="active"><a href="edit-profile.html">Edit Profile</a></li>
-				<li><a href="social-networks.html">Social Networks</a></li>
+				<li><a href="edit-profile.html">Edit Profile</a></li>
+				<li class="active"><a href="social-networks.html">Social Networks</a></li>
 				<li><a href="change-password.html">Change Password</a></li>
-				<li><a href="company-billing-settings.html">Company & Billing Settings</a></li>
+				<li><a href="company-settings.html">Company Settings</a></li>
+				<li><a href="plans-and-billing.html">Plans & Billing</a></li>
 			</ul>
 		</div>
 
 	    <!-- edit form column -->
 	    <div class="col-md-9 col-sm-8 col-xs-12 tabbed-content no-left-gutter">
-	    	<div class="page-header"><h3>Edit Profile</h3></div>
-	    	<div class="alert alert-success" role="alert">Changes saved!</div>
-	      <div class="col-lg-offset-3">
-	        <img src="http://lorempixel.com/200/200/people/9/" class="avatar img-thumbnail img-thumbnail" alt="avatar">
-	        <h6>Upload a different photo...</h6>
-	        <input type="file" class="well well-sm">
-	      </div>
-	      <form class="form-horizontal" role="form">
-	      	<div class="form-group">
-	          <label class="col-lg-3 control-label">Email:</label>
-	          <div class="col-lg-8">
-	            <input class="form-control" value="janesemail@gmail.com" type="text" disabled>
-	          </div>
-	        </div>
-	        <div class="form-group has-error">
-	          <label class="col-lg-3 control-label">First name:</label>
-	          <div class="col-lg-8">
-	            <input class="form-control" value="Jane" type="text">
-	          	<span class="help-block">First name required!</span>
-	          </div>
-	        </div>
-	        <div class="form-group has-error">
-	          <label class="col-lg-3 control-label">Last name:</label>
-	          <div class="col-lg-8">
-	            <input class="form-control" value="Bishop" type="text">
-	            <span class="help-block">Last name required!</span>
-	          </div>
-	        </div>
-	        <div class="form-group">
-	          <label class="col-lg-3 control-label">Time Zone:</label>
-	          <div class="col-lg-8">
-	            <div class="ui-select">
-	              <select id="user_time_zone" class="form-control">
-	                <option value="Hawaii">(GMT-10:00) Hawaii</option>
-	                <option value="Alaska">(GMT-09:00) Alaska</option>
-	                <option value="Pacific Time (US &; Canada)">(GMT-08:00) Pacific Time (US &amp; Canada)</option>
-	                <option value="Arizona">(GMT-07:00) Arizona</option>
-	                <option value="Mountain Time (US &amp; Canada)">(GMT-07:00) Mountain Time (US &amp; Canada)</option>
-	                <option value="Central Time (US &amp; Canada)" selected="selected">(GMT-06:00) Central Time (US &amp; Canada)</option>
-	                <option value="Eastern Time (US &amp; Canada)">(GMT-05:00) Eastern Time (US &amp; Canada)</option>
-	                <option value="Indiana (East)">(GMT-05:00) Indiana (East)</option>
-	              </select>
-	            </div>
-	          </div>
-	        </div>
-	        <div class="form-group">
-	          <div class="col-lg-8 col-lg-offset-3">
-	            <input class="btn btn-primary" value="Save Changes" type="button">
-	            <span></span>
-	            <input class="btn btn-default" value="Cancel" type="reset">
-	          </div>
-	        </div>
-	      </form>
+	    	
+	    	<!-- -------------- NOT CONNECTED STYLE -------------- -->
+
+	    	<div class="page-header"><h3>Social Networks</h3></div>
+
+	    		<div class="alert alert-danger" role="alert">Please connect a Twitter account!</div>
+
+	    		<div class="alert alert-success" role="alert">Success! Twitter connected :)</div>
+
+	    		<div class="social-row">
+			        Twitter: <a href="#" class="btn btn-primary btn-twitter">Connect Twitter</a>
+			    </div>
+		        
+		        <div class="social-row">
+		        Facebook: <a href="#" class="btn btn-primary btn-facebook">Connect Facebook</a>
+			    </div>
+		       
+		     
+		    <div style="height:100px"></div>
+
+		    <!-- -------------- CONNECTED STYLE -------------- -->
+
+		    <div class="page-header"><h3>Social Networks <small>(connected style)</small></h3></div>
+
+		    	<div class="social-row connected">
+		        	<span class="social-label">Twitter:</span>
+
+			        <div class="social-networks">
+				        <div class="social-avatar" style="background-image: url('https://pbs.twimg.com/profile_images/496658829656850432/EC2VCzRk_normal.jpeg');">
+				        </div>
+				        <div class="details">
+				        	<span class="username">@VanToai</span>
+				        	<a href="#">Disconnect</a>
+				        </div>
+			        </div>
+			    </div>
+
+		        <div class="social-row connected">
+			        <span class="social-label">Facebook:</span>
+			        <div class="social-networks">
+				        <div class="social-avatar" style="background-image: url('https://pbs.twimg.com/profile_images/496658829656850432/EC2VCzRk_normal.jpeg');">
+				        </div>
+				        <div class="details">
+				        	<span class="username">Alan VanToai</span>
+				        	<a href="#">Disconnect</a>
+				        </div>
+			        </div>
+			    </div>
+
+		     
+		    <div style="height:100px"></div>
+
+
 	    </div>
 	  </div>
 		

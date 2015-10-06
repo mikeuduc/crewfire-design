@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
-	<link href="css/social-networks.css" rel="stylesheet">
+	<link href="css/company-billing-settings.css" rel="stylesheet">
     <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
    	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 
@@ -95,73 +95,51 @@
 <!-- /NAVBAR -->
 
 	<div class="container person-page">	
+
 	  <div class="row">
 	    <!-- left column -->
 	    <div class="col-md-3 col-sm-4 col-xs-12 no-right-gutter">
 			<ul class="nav nav-stacked">
 				<li><a href="edit-profile.html">Edit Profile</a></li>
-				<li class="active"><a href="#">Social Networks <span class="badge">1</span></a></li>
+				<li><a href="social-networks.html">Social Networks</a></li>
 				<li><a href="change-password.html">Change Password</a></li>
-				<li><a href="company-billing-settings.html">Company & Billing Settings</a></li>
+				<li class="active"><a href="company-settings.html">Company Settings</a></li>
+				<li><a href="plans-and-billing.html">Plans & Billing</a></li>
 			</ul>
 		</div>
 
+
 	    <!-- edit form column -->
 	    <div class="col-md-9 col-sm-8 col-xs-12 tabbed-content no-left-gutter">
-	    	
-	    	<!-- -------------- NOT CONNECTED STYLE -------------- -->
+	    	<div class="page-header"><h3>Company Settings</h3></div>
 
-	    	<div class="page-header"><h3>Social Networks</h3></div>
+	    	<div class="alert alert-success" role="alert">Company name updated!</div>
 
-	    		<div class="alert alert-danger" role="alert">Please connect a Twitter account!</div>
+	    	<div class="alert alert-danger" role="alert">Company name required!</div>
 
-	    		<div class="alert alert-success" role="alert">Success! Twitter connected :)</div>
+	    	<form class="form-horizontal" role="form">
+		      	<div class="form-group has-error">
+		          <label class="col-md-3 control-label">Company Name:</label>
+		          <div class="col-md-8">
+		            <input class="form-control" value="Blackspy Marketing" type="text">
+		            <span class="help-block">Company name required!</span>
+		          </div>
+		        </div>
+		        <div class="form-group">
+		          <label class="col-md-3 control-label"></label>
+		          <div class="col-md-8">
+		            <input class="btn btn-primary" value="Save Changes" type="button">
+		            <span></span>
+		            <input class="btn btn-default" value="Cancel" type="reset">
+		          </div>
+		        </div>
+		      </form>
 
-	    		<div class="social-row">
-			        Twitter: <a href="#" class="btn btn-primary btn-twitter">Connect Twitter</a>
-			    </div>
-		        
-		        <div class="social-row">
-		        Facebook: <a href="#" class="btn btn-primary btn-facebook">Connect Facebook</a>
-			    </div>
-		       
-		     
-		    <div style="height:100px"></div>
-
-		    <!-- -------------- CONNECTED STYLE -------------- -->
-
-		    <div class="page-header"><h3>Social Networks <small>(connected style)</small></h3></div>
-
-		    	<div class="social-row connected">
-		        	<span class="social-label">Twitter:</span>
-
-			        <div class="social-networks">
-				        <div class="social-avatar" style="background-image: url('https://pbs.twimg.com/profile_images/496658829656850432/EC2VCzRk_normal.jpeg');">
-				        </div>
-				        <div class="details">
-				        	<span class="username">@VanToai</span>
-				        	<a href="#">Disconnect</a>
-				        </div>
-			        </div>
-			    </div>
-
-		        <div class="social-row connected">
-			        <span class="social-label">Facebook:</span>
-			        <div class="social-networks">
-				        <div class="social-avatar" style="background-image: url('https://pbs.twimg.com/profile_images/496658829656850432/EC2VCzRk_normal.jpeg');">
-				        </div>
-				        <div class="details">
-				        	<span class="username">Alan VanToai</span>
-				        	<a href="#">Disconnect</a>
-				        </div>
-			        </div>
-			    </div>
-
-		     
-		    <div style="height:100px"></div>
-
+		    <div style="height:15px">
+			</div>
 
 	    </div>
+
 	  </div>
 		
 	</div><!-- /container -->

@@ -1,5 +1,25 @@
 # crewfire-design
 
+## October 6, 2015
+- Created zombie-billing.html (with Reactivate option)
+- Updated blasts.html (SITEWIDE ZOMBIE ALERT!)
+- Created zombie-recruit.html
+- Created no-companies.html
+
+- Updated start.html (auto-upgrade disclaimer)
+- Updated plans-and-billing.html (auto-upgrade disclaimer)
+
+###Restructured
+- new app/ directory vs superadmin/ directory
+
+###Also broke out company settings vs plans & billing
+- Deleted company-billing-settings.html
+- Created company-settings.html 
+- Created plans-and-billing.html
+- Updated edit-profile.html
+- Updated change-passowrd.html
+- Updated social-networks.html
+
 ## September 2, 2015
 - Updated start.html (Added billing)
 - Updated style.css

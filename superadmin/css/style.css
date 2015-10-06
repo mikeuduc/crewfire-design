@@ -1,0 +1,11 @@
+.navbar-brand{
+    padding: 10px 0 10px 15px;
+}
+
+.navbar-brand img{
+	width: 23px;
+}
+
+.table-container{
+	padding-top: 25px;
+}

@@ -103,52 +103,35 @@
 				<li><a href="edit-profile.html">Edit Profile</a></li>
 				<li><a href="social-networks.html">Social Networks</a></li>
 				<li><a href="change-password.html">Change Password</a></li>
-				<li class="active"><a href="company-billing-settings.html">Company & Billing Settings</a></li>
+				<li><a href="company-settings.html">Company Settings</a></li>
+				<li class="active"><a href="plans-and-billing.html">Plans & Billing</a></li>
 			</ul>
 		</div>
 
 
 	    <!-- edit form column -->
+
 	    <div class="col-md-9 col-sm-8 col-xs-12 tabbed-content no-left-gutter">
-	    	<div class="page-header"><h3>Company Details</h3></div>
 
-	    	<div class="alert alert-success" role="alert">Company name updated!</div>
-	    	<div class="alert alert-success" role="alert">Billing info updated!</div>
-	    	<div class="alert alert-danger" role="alert">Card declined, please try another!</div>
-	    	<div class="alert alert-danger" role="alert">Your card is being declined! Please update your billing info to reactivate your account!</div>
-
-	    	<form class="form-horizontal" role="form">
-		      	<div class="form-group has-error">
-		          <label class="col-md-3 control-label">Company Name:</label>
-		          <div class="col-md-8">
-		            <input class="form-control" value="Blackspy Marketing" type="text">
-		            <span class="help-block">Company name required!</span>
-		          </div>
-		        </div>
-		        <div class="form-group">
-		          <label class="col-md-3 control-label"></label>
-		          <div class="col-md-8">
-		            <input class="btn btn-primary" value="Save Changes" type="button">
-		            <span></span>
-		            <input class="btn btn-default" value="Cancel" type="reset">
-		          </div>
-		        </div>
-		      </form>
-
-		    <div style="height:15px">
+	    	<div style="height:15px">
 			</div>
+
+	    	<div class="alert alert-success" role="alert">Card updated successfully!</div>
+
+	    	<div class="alert alert-danger" role="alert">Sorry, your card has been declined! Please try again!</div>
 
 		    <div class="page-header"><h3>Current Usage</h3></div>
 
 			    <p>Current Plan: <strong>Basic $99</strong></p>
 			    <p>Next Billing Cylce: <strong>May 12</strong></p>
 				<p>Current Usage: <strong>37</strong> of <strong>50</strong> supporters</p>
-
 				<div class="progress">
 				  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
 				    <span class="sr-only">75% Complete</span>
 				  </div>
 				</div>
+				<p><i>Note: we will automatically upgrade your account to the next (but still cheapest!) plan for you when you reach the max team members for this tier.</i></p>
+
 
 			<div style="height:15px">
 			</div>
@@ -167,8 +150,8 @@
 			</div>
 
 			<ul class="nav nav-tabs">
-			  <li class="active"><a href="#">Basic Plans</a></li>
-			  <li><a href="#">Premium Plans</a></li>
+			  <li><a href="plans-and-billing.html">Basic Plans</a></li>
+			  <li class="active"><a href="premium-plans.html">Premium Plans</a></li>
 			</ul>
 
 			<div style="height:10px">
@@ -178,48 +161,28 @@
 				<table class="table">
 			        <tbody>
 			          <tr>
-			            <td><strong>$49</strong>/month</td>
-			            <td><strong>0 - 20</strong> supporters</td>
-			            <td>List is too large</td>
-			          </tr>
-			          <tr>
-			            <td><strong>$79</strong>/month</td>
-			            <td><strong>21 - 35</strong> supporters</td>
+			            <td><strong>$74</strong>/month</td>
+			            <td>Up to <strong>20</strong> supporters</td>
 			            <td>List is too large</td>
 			          </tr>
 			          <tr class="active">
-			            <td><strong>$99</strong>/month</td>
-			            <td><strong>36- 50</strong> supporters</td>
+			            <td><strong>$149</strong>/month</td>
+			            <td>Up to <strong>50</strong> supporters</td>
 			            <td><strong>Your Plan</strong></td>
 			          </tr>
 			          <tr>
-			            <td><strong>$149</strong>/month</td>
-			            <td><strong>51 - 80</strong> supporters</td>
-			            <td><input class="btn btn-sm btn-success" value="Upgrade" type="button"></td>
-			          </tr>
-			          <tr>
-			            <td><strong>$199</strong>/month</td>
-			            <td><strong>81 - 110</strong> supporters</td>
-			            <td><input class="btn btn-sm btn-success" value="Upgrade" type="button"></td>
-			          </tr>
-			          <tr>
-			            <td><strong>$249</strong>/month</td>
-			            <td><strong>111 - 150</strong> supporters</td>
-			            <td><input class="btn btn-sm btn-success" value="Upgrade" type="button"></td>
-			          </tr>
-			          <tr>
 			            <td><strong>$299</strong>/month</td>
-			            <td><strong>151 - 200</strong> supporters</td>
+			            <td>Up to <strong>110</strong> supporters</td>
 			            <td><input class="btn btn-sm btn-success" value="Upgrade" type="button"></td>
 			          </tr>
 			          <tr>
-			            <td><strong>$349</strong>/month</td>
-			            <td><strong>201 - 250</strong> supporters</td>
+			            <td><strong>$524</strong>/month</td>
+			            <td>Up to <strong>250</strong> supporters</td>
 			            <td><input class="btn btn-sm btn-success" value="Upgrade" type="button"></td>
 			          </tr>
 			          <tr>
 			            <td>Contact Us</td>
-			            <td><strong>Over 250</strong> supporters</td>
+			            <td>Up to <strong>Over 250</strong> supporters</td>
 			            <td><input class="btn btn-sm btn-primary" value="Contact Us" type="button"></td>
 			          </tr>
 			        </tbody>
@@ -267,7 +230,7 @@
 		    	</form>
 
 	    	<div class="page-header"><h3>Cancel Your Plan</h3></div>
-	    	<p>Note: your will not be able to send any more blasts or access past stats after cancellation.</p>
+	    	<p>Note: if you cancel, your account will be deleted at the end of your billing cycle, and all your data will be lost.</p>
 	    	<a href="#" class="btn btn-danger">Cancel My Plan</a>
 
 	    	<div style="height:45px"></div>
