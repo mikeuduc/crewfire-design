@@ -4,6 +4,7 @@
 - Created zombie-billing.html (with Reactivate option)
 - Updated blasts.html (SITEWIDE ZOMBIE ALERT!)
 - Created zombie-recruit.html
+- Created zombie-company-signup.html
 - Created no-companies.html
 
 - Updated start.html (auto-upgrade disclaimer)
