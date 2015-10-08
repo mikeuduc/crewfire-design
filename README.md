@@ -1,5 +1,9 @@
 # crewfire-design
 
+## October 7, 2015
+- Updated index.html (Refresh stats button)
+- Updated blasts.css (Refresh stats button)
+
 ## October 6, 2015, continued
 - Created denied-billing.html (show to owner when billing is denied)
 - Created owner-suspended.html (show to owner when account is manually suspended)
