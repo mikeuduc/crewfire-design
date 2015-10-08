@@ -4,10 +4,9 @@
 - Updated new-modal.html (Twitter @ reply alert)
 - Updated twitter-compose-with-image.html (Twitter @ reply alert)
 - Updated twitter-compose.html (Twitter @ reply alert)
-
-## October 7, 2015
-- Updated index.html (Refresh stats button)
-- Updated blasts.css (Refresh stats button)
+- Updated soloblast.html (Edit/Cancel, and Forked UI)
+- Updated soloblast.css (Edit/Cancel, and Forked UI)
+- Added fork.png to app/images/
 
 ## October 6, 2015, continued
 - Created denied-billing.html (show to owner when billing is denied)
@@ -20,8 +19,6 @@
 - Created zombie-recruit.html
 - Created zombie-company-signup.html
 - Created no-companies.html
-
-- Updated start.html (auto-upgrade disclaimer)
 - Updated plans-and-billing.html (auto-upgrade disclaimer, cancel modal)
 
 ###Restructured

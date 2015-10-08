@@ -116,9 +116,149 @@
 		  </a>
 		  <div class="media-body">
 			<div class="panel panel-info panel-twitter">
-			  <div class="panel-heading">
-			    <h3 class="panel-title">Tweet With Link <small>8:03pm</small><span class="label label-default group-label">Group B</span></h3>
-			    <span class="pull-right">test</span>
+			  <div class="panel-heading clearfix">
+			    <h3 class="panel-title pull-left">Tweet With Link <small>8:03pm</small><span class="label label-default group-label">Group B</span></h3>
+			    
+			    <div class="pull-right">
+				    <span class="header-actions">
+				    	<a href="#" class="header-action tip" data-toggle="modal" data-target="#blastModal"><span class="glyphicon glyphicon-pencil"></span></a>
+
+<!-------------------->
+
+<!-- Modal -->
+<div class="modal fade blast-modal" id="blastModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+<!-- HEADER -->
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Edit blast</h4>
+      </div>
+
+<!-- BODY -->
+      
+      <div class="modal-body">
+
+      	<div class="alert alert-danger" role="alert">Blast Name is required!</div>
+
+      	<div class="alert alert-danger" role="alert">Tweets can't start with an "@". Sorry, Twitter's rules!</div>
+	
+        <form class="form-horizontal">
+            <div class="form-group">
+		    <label class="col-sm-2 control-label">To:</label>
+		    <div class="col-sm-10">
+
+		      <select class="selectpicker" multiple>
+			      <option>All</option>
+			      	<optgroup label="Groups">
+				      <option>Baltimore</option>
+				      <option>Philadelphia</option>
+				      <option>Washington D.C.</option>
+				    </optgroup>
+				  <option>+ New Group</option>
+			  </select>
+
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <label class="col-sm-2 control-label">Type:</label>
+		    <div class="col-sm-10">
+		    	<div class="radio-inline">
+				  <label>
+				    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+				    Facebook Post
+				  </label>
+				</div>
+				<div class="radio-inline">
+				  <label>
+				    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+				    Tweet
+				  </label>
+				</div>
+		    </div>
+		  </div>
+    	  <div class="form-group has-error">
+		    <label class="col-sm-2 control-label">Blast Name:</label>
+		    <div class="col-sm-10">
+		      <input type="email" class="form-control" placeholder="ex: 'Twitter Discount Code'">
+		    </div>
+		  </div>
+		  <div class="form-group has-error">
+		    <label class="col-sm-2 control-label">Blast Content:</label>
+		    <div class="col-sm-10">
+		      <textarea class="form-control" rows="4" placeholder="ex: 'Hey guys! Use the discount code 'DISCOUNT20' to get 20% off your order at www.MyShop.com'"></textarea>
+		      <p class="pull-right">##</p> 
+		      <!-- ^^ Character count. If "Tweet" is selected, this should count down from 160. Hard limit to 160 characters (don't let them write more than 160 characters) -->
+		    </div>
+		  </div>
+		  <!-- Below are what it will look like when either PHOTO or EXPIRATION options are used. When neither option is used, these form-groups disappear (looks like this: http://cl.ly/image/100q110S0W1J ) -->
+		  <div class="form-group">
+		    <label class="col-sm-2 control-label">Photo:<br/><i>Optional</i></label>
+		    <div class="col-sm-10">
+		      <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ0LjA1NDY4NzUiIHk9IjcwIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MTQweDE0MDwvdGV4dD48L2c+PC9zdmc+" class="img-thumbnail"/><br/><a href="#">Remove Photo</a>
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <label class="col-sm-2 control-label">Expiration Date:<br/><i>Optional</i></label>
+		    <div class="col-sm-4">
+		    	<!-- Use Bootstpra 3 Datepicker v4: https://eonasdan.github.io/bootstrap-datetimepicker/ -->
+		      <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' value="July 7, 2015" class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div><a href="#">Remove Expiration Date</a>
+		    </div>
+		  </div>
+		</form>
+
+      </div>
+
+<!-- FOOTER -->
+
+      <div class="modal-footer">
+      	<div class="pull-left blast-options">
+	      	<span class="glyphicon glyphicon-picture" data-toggle="tooltip" data-placement"top" title="Attach a photo or image."></span>
+	      	<span class="glyphicon glyphicon-calendar" data-toggle="tooltip" data-placement"top" title="Set an expiration date (your supporters won't be able to share this post after this date.)"></span>
+        </div>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-success" data-dismiss="modal"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;Send Blast</button>
+      </div>
+
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-------------------->
+
+				    	<a href="#" class="header-action tip" data-toggle="modal" data-target="#trashModal"><span class="glyphicon glyphicon-trash"></span></a>
+<!-------------------->
+
+<div class="modal fade" id="trashModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Confirm delete</h4>
+      </div>
+      <div class="modal-body">
+        <p>Are you sure you want to cancel this blast? This cannot be undone.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Keep this blast</button>
+        <button type="button" class="btn btn-danger">Cancel this blast</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-------------------->
+
+				    </span>		
+				</div>
+
 			  </div>
 			  <div class="panel-body">
 			    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque justo arcu, malesuada eu magna id, egestas rutrum leo. In hac habitasse platea dictumst. Aliquam erat volutpat. Duis elementum imperdiet luctus. <a href="#">Ut tristique</a>
@@ -150,16 +290,15 @@
 		</div>
 	</div>
 
-
 	<div clss="row">
-		<div class="col-md-10 col-md-offset-1">
+		<div class="col-md-8 col-md-offset-2">
+			<div style="height:20px"></div>
 			<div class="table-responsive">
 				<table class="table table-hover">
 			        <thead>
 			          <tr>
 			            <th>#</th>
 			            <th>Name</th>
-			            <th>Email</th>
 			            <th>Points</th>
 			            <th>RTs</th>
 			            <th>Favs</th>
@@ -171,8 +310,30 @@
 			        <tbody>
 			          <tr>
 			            <td>1</td>
-			            <td><a href="person.html">Mark Shesser</a></td>
-			            <td>Mark@Shesser.com</td>
+			            <td><a href="person.html">Mark Shesser</a> <a href="#" class="header-action tip" data-toggle="modal" data-target="#forkedBlast"><img class="fork-icon" src="images/fork.png"></img></a></td>
+
+<!-------------------->
+
+<div class="modal fade" id="forkedBlast">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Modified blast</h4>
+      </div>
+      <div class="modal-body">
+        <p>Blast content...</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-------------------->
+
+
 			            <td>5,214</td>
 			            <td>25</td>
 			            <td>73</td>
@@ -183,7 +344,6 @@
 			          <tr>
 			            <td>2</td>
 			            <td>Andrew Duch</td>
-			            <td>Andrew@Duch.com</td>
 			            <td>4,240</td>
 			            <td>23</td>
 			            <td>36</td>
@@ -194,7 +354,6 @@
 			          <tr>
 			            <td>3</td>
 			            <td>Mike McCabe</td>
-			            <td>Mike@SimpleCrew.com</td>
 			            <td>4,200</td>
 			            <td>23</td>
 			            <td>36</td>
@@ -205,7 +364,6 @@
 			          <tr>
 			            <td>4</td>
 			            <td>Alan VanToai</td>
-			            <td>Alan@SimpleCrew.com</td>
 			            <td>4,102</td>
 			            <td>23</td>
 			            <td>36</td>
@@ -216,7 +374,6 @@
 			          <tr>
 			            <td>5</td>
 			            <td>Josh Klotz</td>
-			            <td>Jklotz4@gmail.com</td>
 			            <td>3,801</td>
 			            <td>23</td>
 			            <td>36</td>
@@ -227,7 +384,6 @@
 			          <tr>
 			            <td>6</td>
 			            <td>Matt Lilja</td>
-			            <td>MatthewLilja88@gmail.com</td>
 			            <td>3,240</td>
 			            <td>23</td>
 			            <td>36</td>
@@ -238,7 +394,6 @@
 			          <tr>
 			            <td>7</td>
 			            <td>Greg Caulfield</td>
-			            <td>gtc123@gmail.com</td>
 			            <td>3,120</td>
 			            <td>23</td>
 			            <td>36</td>
@@ -249,7 +404,6 @@
 			          <tr>
 			            <td>8</td>
 			            <td>Greg Ormont</td>
-			            <td>Greg@PigeonsPlaying.com</td>
 			            <td>3,110</td>
 			            <td>23</td>
 			            <td>36</td>
@@ -260,7 +414,6 @@
 			          <tr>
 			            <td>9</td>
 			            <td>Jeremy Schon</td>
-			            <td>Jeremy@PigeonsPlaying.com</td>
 			            <td>2,980</td>
 			            <td>23</td>
 			            <td>36</td>
@@ -271,7 +424,6 @@
 			          <tr>
 			            <td>10</td>
 			            <td>Dan Schwartz</td>
-			            <td>Dan@PigeonsPlaying.com</td>
 			            <td>2,802</td>
 			            <td>23</td>
 			            <td>36</td>
