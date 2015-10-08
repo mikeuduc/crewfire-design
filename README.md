@@ -1,5 +1,10 @@
 # crewfire-design
 
+## October 8, 2015
+- Updated new-modal.html (Twitter @ reply alert)
+- Updated twitter-compose-with-image.html (Twitter @ reply alert)
+- Updated twitter-compose.html (Twitter @ reply alert)
+
 ## October 7, 2015
 - Updated index.html (Refresh stats button)
 - Updated blasts.css (Refresh stats button)
