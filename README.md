@@ -4,7 +4,7 @@
 - Updated new-modal.html (Twitter @ reply alert)
 - Updated twitter-compose-with-image.html (Twitter @ reply alert)
 - Updated twitter-compose.html (Twitter @ reply alert)
-- Updated soloblast.html (Edit/Cancel, and Forked UI)
+- Updated soloblast.html (Edit/Cancel, and Forked UI // removed email column)
 - Updated soloblast.css (Edit/Cancel, and Forked UI)
 - Added fork.png to app/images/
 
