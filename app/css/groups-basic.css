@@ -1,0 +1,23 @@
+.choose-a-new-plan{
+	font-size: 20px;
+}
+
+.plans-pricing td{
+	font-size: 20px;
+	line-height: 0;
+}
+
+.questions{
+	margin-top: 30px;
+	text-align: center;
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+
+.modal-header h4{
+	font-size: 25px;
+}
+
+.modal-body{
+	font-size: 18px;
+}
