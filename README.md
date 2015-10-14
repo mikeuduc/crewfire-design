@@ -1,5 +1,9 @@
 # crewfire-design
 
+## Octboer 14, 2015
+- Created groups-basic.html (Basic user trying to access groups feature)
+- Created groups-basic.css (Basic user trying to access groups feature)
+
 ## October 8, 2015
 - Updated new-modal.html (Twitter @ reply alert)
 - Updated twitter-compose-with-image.html (Twitter @ reply alert)
