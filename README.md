@@ -1,5 +1,9 @@
 # crewfire-design
 
+## October 15, 2015
+- Updated soloblast.html (Added deleted post icon)
+- Updated soloblast.css (Added deleted post icon)
+
 ## Octboer 14, 2015
 - Created groups-basic.html (Basic user trying to access groups feature)
 - Created groups-basic.css (Basic user trying to access groups feature)

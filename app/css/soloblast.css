@@ -21,3 +21,8 @@
 .fork-icon{
 	margin-left: 3px;
 }
+
+a.deleted-icon{
+	color: #353535;
+	margin-left: 5px;
+}
