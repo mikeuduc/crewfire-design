@@ -1,5 +1,9 @@
 # crewfire-design
 
+## November 3, 2015
+- Created special-offer-1.html
+- Created css/special-offer.css
+
 ## October 15, 2015
 - Updated soloblast.html (Added deleted post icon)
 - Updated soloblast.css (Added deleted post icon)
