@@ -42,3 +42,21 @@ table{
 td {
     padding: 3px 0;
 }
+.payment-methods {
+    display: block;
+    float: right;
+}
+.payment-methods i {
+    display: inline-block;
+}
+
+.tg-seal {
+    margin: 10px auto 0;
+}
+
+@media screen and (max-width: 480px) {
+    .payment-methods {
+	float: none;
+	margin-top: 10px;
+    }
+}
