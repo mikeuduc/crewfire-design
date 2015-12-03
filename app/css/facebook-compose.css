@@ -29,13 +29,6 @@
 	max-height: 250px;
 }
 
-.start-form{
-	margin-top: 50px;
-}
-
-.start-form .form-group{
-	margin-bottom: 10px;
-}
 
 .start-form label{
 	font-size: 16px;
@@ -45,12 +38,9 @@
 	background: #fff;
 	border-radius: 3px;
 	margin-top: 40px;
+	margin-bottom: 40px;
 	box-shadow: 0 0 6px rgba(0,0,0,0.15);
 	padding: 30px;
-}
-
-.start-form button{
-    margin-left: 15px;
 }
 
 .btn-facebook{
@@ -69,4 +59,85 @@
     color: #ffffff;
     background-color: #3C5589;
     border-color: #004b63;
+}
+
+.facebook-timeline {
+    margin-top: 70px;
+    border: 1px solid;
+    border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+    border-radius: 3px
+}
+
+.facebook-timeline .button-row {
+    padding-top: 15px;
+    border-top: 1px solid #e9eaed;
+    text-align: right;
+}
+
+.facebook-timeline .button-row span.incl-img {
+    margin-right: 15px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.facebook-timeline .btn-facebook {
+    background-color: #4e69a2;
+    border-color: #435a8b #3c5488 #334c83;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .2);
+    background-repeat: repeat-x;
+    border: 1px solid;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-sizing: content-box;
+    font-family: helvetica, arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    float: right;
+    margin-right: 15px;
+    padding-left: 40px;
+}
+
+.facebook-timeline .btn-facebook .fa-facebook {
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    left: 0;
+    margin-left: 12px;
+}
+
+.facebook-timeline .main-form {
+     padding: 15px 15px 0;
+}
+
+.facebook-timeline .avartar {
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: transparent;
+    background-image: url("https://cdn3.iconfinder.com/data/icons/iconano-web-stuff/512/105-User-512.png");
+    float: left;
+}
+
+.facebook-timeline .main-form textarea {
+    float: left;
+    width: calc(100% - 50px);
+    margin-left: 10px;
+    box-shadow: none;
+    border: 1px solid rgba(128, 128, 128, 0.32);
+}
+
+.facebook-timeline .main-form textarea:focus {
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(102,175,233,0.6);
+}
+
+.clear-both {
+    display: block; 
+    height: 0; 
+    clear: both;
 }
