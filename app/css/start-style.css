@@ -50,3 +50,10 @@ td {
 .payment-methods i {
     display: inline-block;
 }
+
+@media screen and (max-width: 480px) {
+    .payment-methods {
+	float: none;
+	margin-top: 10px;
+    }
+}
