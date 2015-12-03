@@ -42,3 +42,11 @@ table{
 td {
     padding: 3px 0;
 }
+
+.payment-methods {
+    display: block;
+    float: right;
+}
+.payment-methods i {
+    display: inline-block;
+}
