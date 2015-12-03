@@ -29,14 +29,6 @@
 	max-height: 250px;
 }
 
-.start-form{
-	margin-top: 50px;
-}
-
-.start-form .form-group{
-	margin-bottom: 10px;
-}
-
 .start-form label{
 	font-size: 16px;
 }
@@ -47,10 +39,6 @@
 	margin-top: 40px;
 	box-shadow: 0 0 6px rgba(0,0,0,0.15);
 	padding: 30px;
-}
-
-.start-form button{
-    margin-left: 15px;
 }
 
 .btn-twitter{
@@ -69,4 +57,63 @@
     color: #ffffff;
     background-color: #2379c8;
     border-color: #2379c8;
+}
+
+.twitter-timeline {
+    border-radius: 5px;
+    border: 1px solid #CBEFFB;
+    display: block;
+    margin-top: 70px;
+    background-color: #EAF8FD;
+}
+
+.twitter-timeline .start-form {
+    padding: 10px 12px;
+    position: relative;
+}
+
+.twitter-timeline .start-form .form-group {
+    margin-bottom: 0px;
+}
+
+.twitter-timeline .start-form textarea {
+    max-height: none;
+    padding: 8px 10px;
+    border-color: rgba(47,194,239,0.25) !important;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+.twitter-timeline .start-form textarea:focus {
+    border-color: #56b4ef;
+}
+
+.twitter-timeline .start-form button {
+    border-radius: 3px;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    float: right;
+}
+
+.twitter-timeline .start-form button .tweeting-text {
+    font-size: 12px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.twitter-timeline .start-form button i.fa {
+    font-size: 23px;
+    top: -5px;
+    position: absolute;
+    left: 0;
+}
+
+.incl-img {
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.clear-both {
+    display: block; 
+    height: 0; 
+    clear: both;
 }
