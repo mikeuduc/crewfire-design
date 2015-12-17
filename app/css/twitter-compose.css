@@ -112,6 +112,16 @@
 
 .twitter-timeline .button-row {
     text-align: right;
+    position: relative;
+}
+
+.tweet-counter {
+    position: absolute;
+    right: 145px;
+    font-size: 12px;
+    line-height: 1.4;
+    bottom: 15px;
+    color: #8899A6;
 }
 
 .incl-img {
