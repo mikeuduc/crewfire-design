@@ -4,10 +4,11 @@
     <title>Get Started - CrewFire</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
-	<link href="css/twitter-compose.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/twitter-compose.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-   	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,7 +23,7 @@
 	<div class="container">	
 		<div class="start-container col-md-10 col-md-offset-1">
 
-			<div class="alert alert-danger" role="alert">Tweets can't start with an "@". Sorry, Twitter's rules!</div>
+			<div class="alert alert-danger" role="alert">Twitter blasts can not start with an "@" symbol, or else they will be shared as direct replies, and will not show up in public Twitter feeds!</div>
 
 			<div class="start-logo">
 				<img src="images/symbol.svg">
@@ -45,17 +46,26 @@
 				<button type="button" class="btn btn-default btn-sm pull-right">Copy suggested post to clipboard</button>
 			</div>
 
-			<form class="start-form">
-				<div class="form-group has-error">
-					<label>Create your post:</label>
-					<textarea class="form-control" rows="5" autofocus></textarea>
-				</div>
+			<div class="twitter-timeline">
+			  <form class="start-form">
+			    <div class="form-group">
+			      <div class="avartar"></div>
+			      <textarea class="form-control" rows="5" autofocus placeholder="Create your post"></textarea>
+			    </div>
 
-				<div class="form-group pull-right">
-					<button type="submit" class="btn btn-twitter" data-toggle="modal" data-target="#myModal">Post to Twitter</button>
-				</div>
+			    <div class="form-group button-row">
+			    <span class="tweet-counter">123</span>
+			    	<button type="submit" class="btn btn-twitter" data-toggle="modal" data-target="#myModal">
+			    		<span class="button-text tweeting-text">
+			    			<i class="fa fa-twitter"></i>
+			    			Post to Twitter
+			    		</span>
+			    	</button>
+			    	<span class="clear-both"></span>
+			    </div>
 
-			</form>
+			  </form>
+			</div>
 
 		</div><!-- /start-container -->
 		
