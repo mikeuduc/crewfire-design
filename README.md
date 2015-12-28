@@ -1,5 +1,9 @@
 # crewfire-design
 
+## December 28, 2015
+- Split out /app-agent and /app-admin
+- Designed new dashboard for /app-agent
+
 ## November 3, 2015
 - Created special-offer-1.html
 - Created css/special-offer.css
