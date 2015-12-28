@@ -1,0 +1,39 @@
+table tbody{
+    font-size: 20px;
+}
+
+table .rank{
+	width: 15px;
+}
+
+.table tbody>tr>td.vert-align{
+    vertical-align: middle;
+}
+
+.table tbody>tr>td.user-rank{
+    font-weight: 600;
+}
+
+.table tbody .user-first{
+    color: #FF4B19;
+}
+
+.table tbody .user-second{
+    color: #FE6811;
+}
+
+.table tbody .user-third{
+    color: #FE7B0C;
+}
+
+.table tbody .user-fourth{
+    color: #FE9C03;
+}
+
+.table tbody .user-fifth{
+    color: #FEA800;
+}
+
+.table tbody>tr>td.user-grey{
+    color: #969696;
+}

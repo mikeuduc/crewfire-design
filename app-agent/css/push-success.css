@@ -1,0 +1,17 @@
+.success-logo img{
+	width: 80px;
+	margin: 0 auto;
+	display: block;
+}
+
+.success-header p{
+	font-size: 20px;
+}
+
+.success-container{
+	background: #fff;
+	border-radius: 3px;
+	margin-top: 40px;
+	box-shadow: 0 0 6px rgba(0,0,0,0.15);
+	padding: 30px;
+}

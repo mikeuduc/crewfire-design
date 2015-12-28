@@ -1,0 +1,28 @@
+.group-label {
+	background-color: rgba(255, 255, 255, 0.3);
+	color: #FFFFFF;
+	border: 1px solid #fff;
+	font-weight: 600;
+	margin-left: 13px;
+}
+
+.header-actions a{
+	color: #fff;
+}
+
+.header-action{
+	padding: 0 5px;
+}
+
+.modal{
+	color: #000;
+}
+
+.fork-icon{
+	margin-left: 3px;
+}
+
+a.deleted-icon{
+	color: #353535;
+	margin-left: 5px;
+}

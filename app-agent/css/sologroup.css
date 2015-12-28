@@ -1,0 +1,23 @@
+h1 a{
+	font-size: 14px;
+}
+
+.group-stats {
+  text-align: center;
+}
+
+.group-stats .panel{
+	display: inline-block;
+	margin: 25px 15px 15px;
+}
+
+.group-stats .group-stat{
+	text-align: center;
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.group-stats .panel-footer{
+	text-align: center;
+	padding: 4px 15px;
+}
