@@ -1,29 +1,10 @@
-.group-label {
-	background-color: rgba(255, 255, 255, 0.3);
-	color: #FFFFFF;
-	border: 1px solid #fff;
-	font-weight: 600;
-	margin-left: 13px;
+.points{
+    font-weight: 600;
+    margin-left: 5px;
+    font-size: 18px;
+    color: #4A4A4A;
 }
 
-.refresh a{
+.remove a{
 	color: #fff;
-	margin-right: 20px;
-}
-
-.share-now a{
-	color: #fff;
-}
-
-.expiration-date{
-	margin-left: 13px;
-    font-size: 14px;
-    color: #ffffff;
-    cursor: pointer;
-    font-weight: 300;
-}
-
-.expiration-date:hover{
-	color: #ffffff;
-	cursor: pointer;
 }
