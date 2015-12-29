@@ -1,5 +1,8 @@
 # crewfire-design
 
+## December 29, 2015
+- created /app-agent/agent-signup.html (added phone number section)
+
 ## December 28, 2015
 - Split out /app-agent and /app-admin
 - Designed new dashboard for /app-agent
