@@ -144,3 +144,51 @@
 	height: 0; 
 	clear: both;
 }
+
+@media screen and (max-width: 550px) {
+	.start-container {
+		padding: 30px 15px;
+	}
+	.start-logo img {
+		width: 40px;
+		margin: 0 auto;
+	}
+	.start-header h1 {
+		font-size: 22px;
+	}
+	.start-container p,
+	.start-header p {
+		font-size: 15px;
+	}
+	.suggested-post {
+		text-align: center;
+	}
+	.suggested-post button {
+		display: block;
+		margin: 15px auto 0;
+		float: none !important;
+	}
+	.suggested-image {
+		text-align: center;
+		margin-top: 25px;
+	}
+	.facebook-timeline {
+		margin-top: 25px;
+	}
+	.facebook-timeline .avartar {
+		display: none;
+	}
+	.facebook-timeline .main-form textarea {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.btn.btn-facebook {
+		margin: 0 auto;
+		display: block;
+		float: none;
+	}
+	.facebook-timeline .button-row span.incl-img {
+		text-align: center;
+		margin: 0 auto 8px;
+	}
+}

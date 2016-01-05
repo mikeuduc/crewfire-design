@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/clipboard.min.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -40,8 +41,8 @@
 
 			<div class="suggested-post">
 				<p>Suggested post:</p>
-				<div class="well">Here's a sample post that was suggested by a manager. http://www.CrewFire.com</div>
-				<button type="button" class="btn btn-default btn-sm pull-right">Copy suggested post to clipboard</button>
+				<div class="well" id="samplePost">Here's a sample post that was suggested by a manager. http://www.CrewFire.com</div>
+				<button type="button" class="btn btn-default btn-sm pull-right" id="copy-button" data-clipboard-target="#samplePost">Copy suggested post to clipboard</button>
 			</div>
 
 			<div class="facebook-timeline">
@@ -69,4 +70,10 @@
 	</div><!-- /container -->
 
   </body>
+  <script type="text/javascript">
+  	$(function() {
+  		new Clipboard('#copy-button');
+  	});
+  </script>
+
 </html>
