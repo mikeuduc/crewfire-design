@@ -4,6 +4,8 @@
     <title>CrewFire Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/rankings.css" rel="stylesheet">
+    <link href="css/company-navbar.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
     <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
    	<script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -24,28 +26,46 @@
   </head>
   <body>
 
+<!-- COMPANY NAVBAR -->
+
+		<nav class="navbar" id="company-navbar" role="navigation">
+			<div class="container">	
+				<ul class="navbar-left">
+			        <li class="dropdown">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">USC Events <span class="caret"></span></a>
+			          <ul class="dropdown-menu" role="menu">
+			          	<li><a href="#" class="active">USC Events</a><li>
+			            <li><a href="#">Blackspy Marketing</a></li>
+			            <li><a href="#">Cervante's</a></li>
+			            <li><a href="#">React Presents</a></li>
+			          </ul>
+			        </li>
+			    </ul>
+			</div><!-- /container -->
+		</nav>
+
  <!-- /NAVBAR -->
 
-	 <nav class="navbar navbar-default" role="navigation">
-		<div class="container">	
-		  <!-- Brand and toggle get grouped for better mobile display -->
-		  <div class="navbar-header">
-		    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-		      <span class="sr-only">Toggle navigation</span>
-		      <span class="icon-bar"></span>
-		      <span class="icon-bar"></span>
-		      <span class="icon-bar"></span>
-		    </button>
-		    <a class="navbar-brand" id="crewfire-logo" href="#"><img src="images/crewfirexs.png"></img></a>
-		  </div>
+		 <nav class="navbar navbar-default" role="navigation">
+			<div class="container">	
+			  <!-- Brand and toggle get grouped for better mobile display -->
+			  <div class="navbar-header">
+			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			      <span class="sr-only">Toggle navigation</span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			    </button>
+			    <a class="navbar-brand" id="crewfire-logo" href="#"><img src="images/crewfire-logo.svg"></img></a>
+			  </div>
 
-		  <!-- Collect the nav links, forms, and other content for toggling -->
-		  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		    <ul class="nav navbar-nav">
-		      <li class="active"><a href="#">Reports</a></li>
-		      <li><a href="people.html">People</a></li>
-			  <li><a href="recruit.html">Recruit</a></li>
-			  <li><button type="button" class="btn btn-success navbar-btn" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-bullhorn"></span> New Blast</button></li>
+			  <!-- Collect the nav links, forms, and other content for toggling -->
+			  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			    <ul class="nav navbar-nav">
+			      <li class="active"><a href="#">Reports</a></li>
+			      <li><a href="people.html">People</a></li>
+			      <li><a href="recruit.html">Recruit</a></li>
+				  <li><button type="button" class="btn btn-success navbar-btn hvr-radial-out" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-bullhorn"></span> New Blast</button></li>
 		    </ul>
 
 		    <!-- Modal -->
@@ -57,10 +77,17 @@
 			        <h4 class="modal-title" id="myModalLabel"><input type="email" class="form-control" id="PostName" placeholder="Post Name"></input></h4>
 			      </div>
 			      <div class="modal-body">
-			      	<div class="btn-group">
+
+			      	<ul class="nav nav-pills">
+			      		<li class="active"><a href="#">Facebook</a></li>
+			      		<li><a href="#">Twitter</a></li>
+			      	</ul>
+			      	 
+			      	<!--<div class="btn-group">
 					  <button type="button" class="btn btn-default">Tweet</button>
 					  <button type="button" class="btn btn-default">FB Post</button>
-					</div>
+					</div>-->
+				
 			        <input type="text" class="form-control" id="PostBody" placeholder="What do you want to share?">
 			      </div>
 			      <div class="modal-footer">
@@ -72,36 +99,62 @@
 			  </div><!-- /.modal-dialog -->
 			</div><!-- /.modal -->
 
-		    <ul class="nav navbar-nav navbar-right">
-		      <li><a href="#">Help</a></li>
-		      <li class="dropdown">
-		        <div class="btn-group">
-				  <button type="button" class="btn btn-default dropdown-toggle navbar-btn" data-toggle="dropdown">
-				    USC Events <span class="caret"></span>
-				  </button>
-				  <ul class="dropdown-menu" role="menu">
-				    <li><a href="#">Account</a></li>
-				    <li class="divider"></li>
-				    <li><a href="#">Sign Out</a></li>
-				  </ul>
-				</div>
-		      </li>
-		    </ul>
-		  </div><!-- /.navbar-collapse -->
-		</div><!-- /container -->
-	</nav><!-- /NAVBAR -->
+			    <ul class="nav navbar-nav navbar-right">
+			      <li><a href="#">Help</a></li>
+			      <li class="dropdown">
+			        <div class="btn-group">
+					  <button type="button" class="btn btn-default dropdown-toggle navbar-btn hvr-radial-out" data-toggle="dropdown">
+					    Life In Color <span class="caret"></span>
+					  </button>
+					  <ul class="dropdown-menu" role="menu">
+					    <li><a href="#">Account</a></li>
+					    <li class="divider"></li>
+					    <li><a href="#">Sign Out</a></li>
+					  </ul>
+					</div>
+			      </li>
+			    </ul>
+			  </div><!-- /.navbar-collapse -->
+			</div><!-- /container -->
+		</nav>
+
+<!-- /NAVBAR -->
 
 	<div class="container">	
 		<ul class="nav nav-tabs">
-		  <li><a href="blasts.html">RECENT BLASTS</a></li>
-		  <li class="active"><a href="leaderboard.html">Leaderboard</a></li>
+		  <li><a href="blasts.html">Campaigns</a></li>
+		  <li class="active"><a href="leaderboard.html">Rankings</a></li>
 		</ul>
 	</div>
 
 	<div class="container tabbed-content">	
 
-		<div class="row" id="nav-pills-small">
-			<div class="col-md-4 col-md-offset-8">
+		<h1 class="text-center">
+			Rankings
+		</h1>
+
+		<div style="height: 20px"></div>
+
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<div class="btn-group pull-right">
+				    <button type="button" data-toggle="dropdown" class="btn btn-sm btn-default dropdown-toggle">Last 7 Days <span class="caret"></span></button>
+				    <ul class="dropdown-menu">
+				        <li><a href="#">Today</a></li>
+				        <li><a href="#">Yesterday</a></li>
+				        <li><a href="#">Last Week</a></li>
+				        <li><a href="#">Last Month</a></li>
+				        <li><a href="#">Last 7 Days</a></li>
+				        <li><a href="#">Last 30 Days</a></li>
+				    </ul>
+				</div>
+			</div>
+		</div>
+
+		<div style="height: 20px"></div>
+
+		<!-- <div class="row" id="nav-pills-small">
+			<div class="col-md-4 col-md-offset-6">
 				<ul class="nav nav-pills pull-right">
 				  <li class="active"><a href="#">Day</a></li>
 				  <li><a href="#">Week</a></li>
@@ -111,118 +164,97 @@
 				  <li><a href="#">Custom</a></li>
 				</ul>
 			</div>
-		</div><!-- .nav-pills-small"-->
+		</div> -->
 
-		<div class="table-responsive">
+
+
+		<div class="table-responsive col-md-8 col-md-offset-2">
 			<table class="table table-hover">
 		        <thead>
 		          <tr>
-		            <th>#</th>
-		            <th>Name</th>
-		            <th>Email</th>
+		            <th class="rank">Rank</th>
+		            <th>User</th>
 		            <th>Points</th>
-		            <th>Shares</th>
+		            <th>Posts</th>
 		            <th>Clicks</th>
 		          </tr>
 		        </thead>
 		        <tbody>
 		          <tr>
-		            <td>1</td>
-		            <td><a href="person.html">Mark Shesser</a></td>
-		            <td>Mark@Shesser.com</td>
-		            <td>5,214</td>
-		            <td>25</td>
-		            <td>73</td>
+		            <td class="vert-align text-center">1</td>
+		            <td class="user-rank user-first"><img src="images/user.png" width="45px" class="img-circle"> Mark Shesser</td>
+		            <td class="vert-align">5,214</td>
+		            <td class="vert-align">25</td>
+		            <td class="vert-align">25</td>
 		          </tr>
 		          <tr>
-		            <td>2</td>
-		            <td>Andrew Duch</td>
-		            <td>Andrew@Duch.com</td>
-		            <td>4,240</td>
-		            <td>23</td>
-		            <td>36</td>
+		            <td class="vert-align text-center">2</td>
+		            <td class="user-rank user-second"><img src="images/user.png" width="45px" class="img-circle"> Andrew Duch</td>
+		            <td class="vert-align">4,240</td>
+		            <td class="vert-align">23</td>
+		            <td class="vert-align">25</td>
 		          </tr>
 		          <tr>
-		            <td>3</td>
-		            <td>Mike McCabe</td>
-		            <td>Mike@SimpleCrew.com</td>
-		            <td>4,200</td>
-		            <td>23</td>
-		            <td>36</td>
+		            <td class="vert-align text-center">3</td>
+		            <td class="user-rank user-third"><img src="images/user.png" width="45px" class="img-circle"> Mike McCabe</td>
+		            <td class="vert-align">4,200</td>
+		            <td class="vert-align">23</td>
+		            <td class="vert-align">25</td>
+		          </tr>
+		          <tr class="warning">
+		            <td class="vert-align text-center">4</td>
+		            <td class="user-rank user-fourth"><img src="images/user.png" width="45px" class="img-circle"> Alan VanToai</td>
+		            <td class="vert-align">4,102</td>
+		            <td class="vert-align">23</td>
+		            <td class="vert-align">25</td>
 		          </tr>
 		          <tr>
-		            <td>4</td>
-		            <td>Alan VanToai</td>
-		            <td>Alan@SimpleCrew.com</td>
-		            <td>4,102</td>
-		            <td>23</td>
-		            <td>36</td>
+		            <td class="vert-align text-center">5</td>
+		            <td class="user-rank user-fifth"><img src="images/user.png" width="45px" class="img-circle"> Josh Klotz</td>
+		            <td class="vert-align">3,801</td>
+		            <td class="vert-align">23</td>
+		            <td class="vert-align">25</td>
 		          </tr>
 		          <tr>
-		            <td>5</td>
-		            <td>Josh Klotz</td>
-		            <td>Jklotz4@gmail.com</td>
-		            <td>3,801</td>
-		            <td>23</td>
-		            <td>36</td>
+		            <td class="vert-align text-center">6</td>
+		            <td class="user-rank user-grey"><img src="images/user.png" width="45px" class="img-circle"> Matt Lilja</td>
+		            <td class="vert-align">3,240</td>
+		            <td class="vert-align">23</td>
+		            <td class="vert-align">25</td>
 		          </tr>
 		          <tr>
-		            <td>6</td>
-		            <td>Matt Lilja</td>
-		            <td>MatthewLilja88@gmail.com</td>
-		            <td>3,240</td>
-		            <td>23</td>
-		            <td>36</td>
+		            <td class="vert-align text-center">7</td>
+		            <td class="user-rank user-grey"><img src="images/user.png" width="45px" class="img-circle"> Greg Caulfield</td>
+		            <td class="vert-align">3,120</td>
+		            <td class="vert-align">23</td>
+		            <td class="vert-align">25</td>
 		          </tr>
 		          <tr>
-		            <td>7</td>
-		            <td>Greg Caulfield</td>
-		            <td>gtc123@gmail.com</td>
-		            <td>3,120</td>
-		            <td>23</td>
-		            <td>36</td>
+		            <td class="vert-align text-center">8</td>
+		            <td class="user-rank user-grey"><img src="images/user.png" width="45px" class="img-circle"> Greg Ormont</td>
+		            <td class="vert-align">3,110</td>
+		            <td class="vert-align">23</td>
+		            <td class="vert-align">25</td>
 		          </tr>
 		          <tr>
-		            <td>8</td>
-		            <td>Greg Ormont</td>
-		            <td>Greg@PigeonsPlaying.com</td>
-		            <td>3,110</td>
-		            <td>23</td>
-		            <td>36</td>
+		            <td class="vert-align text-center">9</td>
+		            <td class="user-rank user-grey"><img src="images/user.png" width="45px" class="img-circle"> Jeremy Schon</td>
+		            <td class="vert-align">2,980</td>
+		            <td class="vert-align">23</td>
+		            <td class="vert-align">25</td>
 		          </tr>
 		          <tr>
-		            <td>9</td>
-		            <td>Jeremy Schon</td>
-		            <td>Jeremy@PigeonsPlaying.com</td>
-		            <td>2,980</td>
-		            <td>23</td>
-		            <td>36</td>
-		          </tr>
-		          <tr>
-		            <td>10</td>
-		            <td>Dan Schwartz</td>
-		            <td>Dan@PigeonsPlaying.com</td>
-		            <td>2,802</td>
-		            <td>23</td>
-		            <td>36</td>
+		            <td class="vert-align text-center">10</td>
+		            <td class="user-rank user-grey"><img src="images/user.png" width="45px" class="img-circle"> Dan Schwartz</td>
+		            <td class="vert-align">2,802</td>
+		            <td class="vert-align">23</td>
+		            <td class="vert-align">25</td>
 		          </tr>
 		        </tbody>
 			</table>
 
 		</div><!-- /.table-responsive -->
-		<div class="row">
-			<div class="col-md-4">
-				<ul class="pagination">
-				  <li><a href="#">&laquo;</a></li>
-				  <li class="active"><a href="#">1</a></li>
-				  <li><a href="#">2</a></li>
-				  <li><a href="#">3</a></li>
-				  <li><a href="#">4</a></li>
-				  <li><a href="#">5</a></li>
-				  <li><a href="#">&raquo;</a></li>
-				</ul>
-			</div>
-		</div>
+
 	</div><!-- /container -->
 
   </body>

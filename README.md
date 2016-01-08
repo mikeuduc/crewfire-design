@@ -1,5 +1,11 @@
 # crewfire-design
 
+## January 8, 2016 II
+- Updates to /app-admin with new leaderboard and using "Campaigns"
+- Updated blasts.html (new copy: "Campaigns" instead of "Recent Blasts")
+- Updated leaderboard.html (new Leaderboard style)
+- Created /css/rankings.css
+
 ## January 8, 2016
 - Created /app-agent/campaigns-empty.html (New first run experience. Alerts now blue (les intense, and dismissable))
 - Created /app-agent/profile-empty.html (New first run experience.)
