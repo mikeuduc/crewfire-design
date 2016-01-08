@@ -1,5 +1,10 @@
 # crewfire-design
 
+## January 8, 2016
+- Created /app-agent/campaigns-empty.html (New first run experience. Alerts now blue (les intense, and dismissable))
+- Created /app-agent/profile-empty.html (New first run experience.)
+- Updated /app-agent/css/style.css
+
 ## December 29, 2015
 - created /app-agent/agent-signup.html (added phone number section)
 
