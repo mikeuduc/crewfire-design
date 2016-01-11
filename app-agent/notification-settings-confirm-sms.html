@@ -97,72 +97,35 @@
 	    <!-- left column -->
 	    <div class="col-md-3 col-sm-4 col-xs-12 no-right-gutter">
 			<ul class="nav nav-stacked">
-				<li class="active"><a href="edit-profile.html">Edit Profile</a></li>
+				<li><a href="edit-profile.html">Edit Profile</a></li>
 				<li><a href="social-networks.html">Social Networks</a></li>
-				<li><a href="notification-settings.html">Notification Settings</a></li>
+				<li class="active"><a href="notification-settings.html">Notification Settings</a></li>
 				<li><a href="change-password.html">Change Password</a></li>
 			</ul>
 		</div>
 
 	    <!-- edit form column -->
 	    <div class="col-md-9 col-sm-8 col-xs-12 tabbed-content no-left-gutter">
-	    	<div class="page-header"><h3>Edit Profile</h3></div>
-	    	<div class="alert alert-success" role="alert">Changes saved!</div>
-	      <div class="col-lg-offset-3">
-	        <img src="http://lorempixel.com/200/200/people/9/" class="avatar img-thumbnail img-thumbnail" alt="avatar">
-	      </div>
-	      <form class="form-horizontal" role="form">
-	      	<div class="form-group">
-	          <label class="col-lg-3 control-label">Email:</label>
-	          <div class="col-lg-8">
-	            <input class="form-control" value="janesemail@gmail.com" type="text" disabled>
-	          </div>
-	        </div>
-	        <div class="form-group has-error">
-	          <label class="col-lg-3 control-label">First Name:</label>
-	          <div class="col-lg-8">
-	            <input class="form-control" value="Jane" type="text">
-	          	<span class="help-block">First name required!</span>
-	          </div>
-	        </div>
-	        <div class="form-group has-error">
-	          <label class="col-lg-3 control-label">Last Name:</label>
-	          <div class="col-lg-8">
-	            <input class="form-control" value="Bishop" type="text">
-	            <span class="help-block">Last name required!</span>
-	          </div>
-	        </div>
-	        <div class="form-group">
-	          <label class="col-lg-3 control-label">Phone Number:</label>
-	          <div class="col-lg-8">
-	            <input class="form-control" value="(240)997-1770" type="text">
-	          </div>
-	        </div>
-	        <div class="form-group">
-	          <label class="col-lg-3 control-label">Time Zone:</label>
-	          <div class="col-lg-8">
-	            <div class="ui-select">
-	              <select id="user_time_zone" class="form-control">
-	                <option value="Hawaii">(GMT-10:00) Hawaii</option>
-	                <option value="Alaska">(GMT-09:00) Alaska</option>
-	                <option value="Pacific Time (US &; Canada)">(GMT-08:00) Pacific Time (US &amp; Canada)</option>
-	                <option value="Arizona">(GMT-07:00) Arizona</option>
-	                <option value="Mountain Time (US &amp; Canada)">(GMT-07:00) Mountain Time (US &amp; Canada)</option>
-	                <option value="Central Time (US &amp; Canada)" selected="selected">(GMT-06:00) Central Time (US &amp; Canada)</option>
-	                <option value="Eastern Time (US &amp; Canada)">(GMT-05:00) Eastern Time (US &amp; Canada)</option>
-	                <option value="Indiana (East)">(GMT-05:00) Indiana (East)</option>
-	              </select>
-	            </div>
-	          </div>
-	        </div>
-	        <div class="form-group">
-	          <div class="col-lg-8 col-lg-offset-3">
-	            <input class="btn btn-primary" value="Save Changes" type="button">
-	            <span></span>
-	            <input class="btn btn-default" value="Cancel" type="reset">
-	          </div>
-	        </div>
-	      </form>
+	    	<div class="page-header"><h3>Notification Settings</h3>
+	    	</div>
+	    	Receive new campaign notifications by:
+	    	<div class="checkbox">
+			  <label>
+			    <input type="checkbox" value="1" checked>
+			    Email
+			  </label>
+			</div>
+			<div class="checkbox">
+			  <label>
+			    <input type="checkbox" value="1" disabled>
+			    SMS
+			  </label><br/>
+			  <div style="height:5px"></div>
+			  <i>You have to confirm your mobile phone number before you can recieve SMS campaign invites. <a href="#">Click here to send confirmation text message.</a></i>
+			</div>
+			<div style="height:25px"></div>
+			<button class="btn btn-primary">Save Changes</button>
+			<div style="height:50px"></div>
 	    </div>
 	  </div>
 		
