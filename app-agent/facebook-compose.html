@@ -40,15 +40,15 @@
 
 			<div class="suggested-post">
 				<p>Suggested post:</p>
-				<div class="well">Here's a sample post that was suggested by a manager. http://www.CrewFire.com</div>
-				<button type="button" class="btn btn-default btn-sm pull-right">Copy suggested post to clipboard</button>
+				<div class="well" id="samplePost">Here's a sample post that was suggested by a manager. http://www.CrewFire.com</div>
+				<button type="button" class="btn btn-default btn-sm pull-right" id="buttonCopy">Fill suggested content</button>
 			</div>
 
 			<div class="facebook-timeline">
 			  <form class="start-form">
 			    <div class="form-group main-form">
 			      <div class="avartar"></div>
-			      <textarea class="form-control" rows="4" autofocus placeholder="Create your post"></textarea>
+			      <textarea class="form-control" rows="4" autofocus placeholder="Create your post" id="fillArea"></textarea>
 			      <span class="clear-both"></span>
 			    </div>
 
@@ -68,5 +68,6 @@
 		
 	</div><!-- /container -->
 
+	<script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
