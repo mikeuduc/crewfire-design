@@ -26,6 +26,18 @@ table{
 
 */
 
+.custom-grey-lg {
+    font-size: 60px;
+    font-weight: 700;
+    color: #E3E3E3;
+}
+
+.custom-grey-md {
+    font-size: 40px;
+    font-weight: 700;
+    color: #E3E3E3;
+}
+
 .navbar .btn{
     margin: 7px 0 auto 10px;
     padding-top: 8px;

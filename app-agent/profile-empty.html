@@ -64,39 +64,10 @@
 			  <!-- Collect the nav links, forms, and other content for toggling -->
 			  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			    <ul class="nav navbar-nav">
-			      <li class="active"><a href="#">Reports</a></li>
+			      <li><a href="#">Campaigns</a></li>
+			      <li><a href="rankings.html">Rankings</a></li>
+			      <li class="active"><a href="profile.html">My Profile</a></li>
 		    </ul>
-
-		    <!-- Modal -->
-			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			  <div class="modal-dialog">
-			    <div class="modal-content">
-			      <div class="modal-header">
-			        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-			        <h4 class="modal-title" id="myModalLabel"><input type="email" class="form-control" id="PostName" placeholder="Post Name"></input></h4>
-			      </div>
-			      <div class="modal-body">
-
-			      	<ul class="nav nav-pills">
-			      		<li class="active"><a href="#">Facebook</a></li>
-			      		<li><a href="#">Twitter</a></li>
-			      	</ul>
-			      	 
-			      	<!--<div class="btn-group">
-					  <button type="button" class="btn btn-default">Tweet</button>
-					  <button type="button" class="btn btn-default">FB Post</button>
-					</div>-->
-				
-			        <input type="text" class="form-control" id="PostBody" placeholder="What do you want to share?">
-			      </div>
-			      <div class="modal-footer">
-			      	<a href="#" class="tip" data-toggle="tooltip" data-placement"top" title="Upload a Photo"><span class="glyphicon glyphicon-camera"></span></a>
-			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			        <button type="button" class="btn btn-primary" data-dismiss="modal"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;Send</button>
-			      </div>
-			    </div><!-- /.modal-content -->
-			  </div><!-- /.modal-dialog -->
-			</div><!-- /.modal -->
 
 			    <ul class="nav navbar-nav navbar-right">
 			      <li><a href="#">Help</a></li>
@@ -106,7 +77,10 @@
 					    Alan VanToai <span class="caret"></span>
 					  </button>
 					  <ul class="dropdown-menu" role="menu">
-					    <li><a href="#">Account</a></li>
+					    <li><a href="edit-profile.html">Edit Profile</a></li>
+					    <li><a href="#">Social Networks</a></li>
+					    <li><a href="notification-settings.html">Notification Settings</a></li>
+					    <li><a href="#">Change Password</a></li>
 					    <li class="divider"></li>
 					    <li><a href="#">Sign Out</a></li>
 					  </ul>
@@ -118,23 +92,59 @@
 		</nav>
 
 <!-- /NAVBAR -->
-	<div class="container tabs-container">
-		<ul class="nav nav-tabs">
-		  <li><a href="agent-pending-blasts-empty.html">Pending Blasts</a></li>
-		  <li class="active"><a href="leaderboard.html">Shared Blasts</a></li>
-		  <li><a href="leaderboard.html">Leaderboard</a></li>
-		</ul>
-	</div>
 
-	<div class="container tabbed-content">	
+<div class="container tabbed-content">	
 
-		<div style="height: 16px"></div>
+		<h1 class="text-center">
+			My Profile
+		</h1>
 
-		<div class="alert alert-danger">
-			You have no shared blasts yet!
-			<br/><br/>
-			After you share your first blast, you can see your stats, engagement, and points here.
-		</class>
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1" id="personHeader">
+				<div class="panel panel-default">
+					<div class="panel-heading"><h3 class="panel-title">Alan VanToai</h3></div><!-- /panel heading -->
+
+					<div class="panel-body">
+					  	<div class="media">
+							<a class="pull-left" href="#">
+								<img class="media-object img-thumbnail" src="images/example.png" alt="Alan VanToai">
+							</a>
+						  	<div class="media-body">
+							    <b>Email:</b> <a href="#">Alan@VanToai.com</a><br/>
+							    <b>Twitter:</b> <a href="#">@VanToai</a><br/>
+							    <b>Facebook:</b> <a href="#">Alan VanToai</a><br/>
+							    <b>Phone:</b> <a href="#">(240)997-1770</a><br/>
+							</div><!-- /media-body -->
+						</div><!-- /media -->
+					</div><!-- /panel-body -->
+
+					<div class="table-responsive">
+				      <table class="table table-bordered">
+					    <tbody>
+					      <tr>
+				            <td><h3>0 <small> Points</small></h3> </td>
+				            <td><h3>0 <small> Posts</small></h3> </td>
+				            <td><h3>0 <small> Clicks</small></h3> </td>
+		          		  </tr>
+					    </tbody>
+					  </table>
+					</div>
+
+				</div><!-- /panel -->
+			</div><!-- /col-md-12 -->
+		</div><!-- /row -->
+
+		<div style="height:15px"></div>
+
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1 post-block">
+
+				<span class="custom-grey-lg">You haven't shared any posts yet.</span>
+
+				<div style="height: 30px"></div>
+
+			</div><!-- /col-md-12 -->
+		</div><!-- /row -->
 
 	</div><!-- /container -->
 

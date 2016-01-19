@@ -64,39 +64,10 @@
 			  <!-- Collect the nav links, forms, and other content for toggling -->
 			  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			    <ul class="nav navbar-nav">
-			      <li class="active"><a href="#">Reports</a></li>
+			      <li class="active"><a href="#">Campaigns</a></li>
+			      <li><a href="rankings.html">Rankings</a></li>
+			      <li><a href="profile.html">My Profile</a></li>
 		    </ul>
-
-		    <!-- Modal -->
-			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			  <div class="modal-dialog">
-			    <div class="modal-content">
-			      <div class="modal-header">
-			        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-			        <h4 class="modal-title" id="myModalLabel"><input type="email" class="form-control" id="PostName" placeholder="Post Name"></input></h4>
-			      </div>
-			      <div class="modal-body">
-
-			      	<ul class="nav nav-pills">
-			      		<li class="active"><a href="#">Facebook</a></li>
-			      		<li><a href="#">Twitter</a></li>
-			      	</ul>
-			      	 
-			      	<!--<div class="btn-group">
-					  <button type="button" class="btn btn-default">Tweet</button>
-					  <button type="button" class="btn btn-default">FB Post</button>
-					</div>-->
-				
-			        <input type="text" class="form-control" id="PostBody" placeholder="What do you want to share?">
-			      </div>
-			      <div class="modal-footer">
-			      	<a href="#" class="tip" data-toggle="tooltip" data-placement"top" title="Upload a Photo"><span class="glyphicon glyphicon-camera"></span></a>
-			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			        <button type="button" class="btn btn-primary" data-dismiss="modal"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;Send</button>
-			      </div>
-			    </div><!-- /.modal-content -->
-			  </div><!-- /.modal-dialog -->
-			</div><!-- /.modal -->
 
 			    <ul class="nav navbar-nav navbar-right">
 			      <li><a href="#">Help</a></li>
@@ -106,7 +77,10 @@
 					    Alan VanToai <span class="caret"></span>
 					  </button>
 					  <ul class="dropdown-menu" role="menu">
-					    <li><a href="#">Account</a></li>
+					    <li><a href="edit-profile.html">Edit Profile</a></li>
+					    <li><a href="#">Social Networks</a></li>
+					    <li><a href="notification-settings.html">Notification Settings</a></li>
+					    <li><a href="#">Change Password</a></li>
 					    <li class="divider"></li>
 					    <li><a href="#">Sign Out</a></li>
 					  </ul>
@@ -120,30 +94,34 @@
 <!-- /NAVBAR -->
 
 	<div class="container">
-		<div class="alert alert-danger">
-			<strong>IMPORTANT</strong> - You haven't connected Facebook yet! Please <a href="#">Click Here</a> to connect your Facebook account!
+		<div class="alert alert-info alert-dismissable">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			    <span aria-hidden="true">&times;</span>
+			  </button>
+			You haven't connected Facebook yet! Please <a href="#">Click Here</a> to connect your Facebook account :)
 		</div>
-		<div class="alert alert-danger">
-			<strong>IMPORTANT</strong> - You haven't connected Twitter yet! Please <a href="#">Click Here</a> to connect your Twitter account!
+		<div class="alert alert-info alert-dismissable">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			    <span aria-hidden="true">&times;</span>
+			  </button>
+			You haven't connected Twitter yet! Please <a href="#">Click Here</a> to connect your Twitter account :)
 		</div>
 	</div>	
 
-	<div class="container tabs-container">
-		<ul class="nav nav-tabs">
-		  <li class="active"><a href="agent-pending-blasts-empty.html">Pending Blasts</a></li>
-		  <li><a href="agent-shared-blasts-empty.html">Shared Blasts</a></li>
-		  <li><a href="leaderboard.html">Leaderboard</a></li>
-		</ul>
-	</div>
-
 	<div class="container tabbed-content">	
 
-		<div style="height: 16px"></div>
+		<h1 class="text-center">
+			Campaigns
+		</h1>
 
-		<div class="alert alert-danger">
-			You have no unshared blasts yet!
-			<br/><br/>
-			Your manager will create posts for you to share on Twitter or Facebook. When they do, we'll send you an email, and they will appear here for you to share.
+		<div style="height:15px"></div>
+
+		<div class="col-md-10 col-md-offset-1">
+			
+			<span class="custom-grey-md">You have no active campaigns. When your manager creates campaigns, they'll appear here (and we'll send you an email/text so you don't miss'm).</span>
+
+			<div style="height: 30px"></div>
+
 		</div>
 
 	</div><!-- /container -->
