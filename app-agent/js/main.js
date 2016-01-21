@@ -2,6 +2,7 @@ var Crewfire = {
 	init: function() {
 		var self = this;
 		self.fillinSuggestContent();
+		self.sortingTable();
 	},
 
 	fillinSuggestContent: function () {
@@ -9,6 +10,10 @@ var Crewfire = {
 		$('#buttonCopy').click(function () {
 			$("#fillArea").val(content);
 		});
+	},
+
+	sortingTable: function () {
+		$("#tableSorter").tablesorter();
 	}
 }
 

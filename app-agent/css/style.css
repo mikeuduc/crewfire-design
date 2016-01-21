@@ -577,9 +577,14 @@ position: relative;
 table th.arrow {
 	position: relative;
 	padding-left: 25px !important;
+	cursor: pointer;
 }
 
-table th.upward::after {
+table td {
+	padding-left: 25px !important;
+}
+
+table th.headerSortUp::after {
 	content: "";
 	display: block;
 	width: 8px;
@@ -593,7 +598,7 @@ table th.upward::after {
 	cursor: pointer;
 }
 
-table th.downward::after {
+table th.headerSortDown::after {
 	content: "";
 	display: block;
 	width: 8px;
