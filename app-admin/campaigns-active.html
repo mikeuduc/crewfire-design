@@ -106,7 +106,7 @@
 			      <li class="dropdown">
 			        <div class="btn-group">
 					  <button type="button" class="btn btn-default dropdown-toggle navbar-btn hvr-radial-out" data-toggle="dropdown">
-					    Life In Color <span class="caret"></span>
+					    Alan VanToai <span class="caret"></span>
 					  </button>
 					  <ul class="dropdown-menu" role="menu">
 					    <li><a href="#">Account</a></li>
@@ -121,25 +121,17 @@
 		</nav>
 
 <!-- /NAVBAR -->
-
-	<div class="container">
-		<div class="alert alert-danger" role="alert">Your account has been cancelled and will be deleted at the end of your billing cylce: -endDate- 
-		<br/><br/>
-		If you don't want your account deleted (and all data lost), <a href="#">click here</a> to reactivate</div>
-	</div>
-
 	<div class="container tabs-container">
 		<ul class="nav nav-tabs">
-		  <li class="active"><a href="blasts.html">Campaigns</a></li>
-		  <li><a href="leaderboard.html">Rankings</a></li>
+		  <li class="active"><a href="campaigns-active.html">Active Campaigns</a></li>
+		  <li><a href="campaigns-archived.html">Archive</a></li>
+		  <li><a href="rankings.html">Rankings</a></li>
 		</ul>
 	</div>
 
 	<div class="container tabbed-content">	
 
-		<div style="height:15px"></div>
-
-		<div class="alert alert-danger" role="alert">We need a green alert</div>
+		<div style="height: 15px"></div>
 
 		<h3>Thursday, November 28</h3>
 
@@ -149,8 +141,17 @@
 		  </a>
 		  <div class="media-body">
 			<div class="panel panel-info panel-twitter">
-			  <div class="panel-heading">
-			    <h3 class="panel-title"><a href="soloblast.html">Tweet With Link</a> <small>8:03pm</small><span class="label label-default group-label">All</span></h3>
+			  <div class="panel-heading clearfix">
+			    <h3 class="panel-title pull-left"><a href="soloblast.html">Tweet With Link</a> <small>8:03pm</small><span class="label label-default group-label">All</span></h3>
+
+			    <a class="tip expiration-date" data-toggle="tooltip" data-placement"top" title="This blast expires on $DATE. After $DATE, you will no longer be able to share this blast."><span class="glyphicon glyphicon-time"></span> Oct 5</a>
+
+			    <div class="pull-right">
+			    	<span class="header-actions">
+			    		<a href="#" class="header-action"><span class="glyphicon glyphicon-pencil"></span></a>
+			    		<a href="#" class="tip archive" data-toggle="tooltip" data-placement="top" title="Archive Campaign"><span class="glyphicon glyphicon-inbox"></span></a>
+			    	</span>
+			    </div>
 			  </div>
 			  <div class="panel-body">
 			    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque justo arcu, malesuada eu magna id, egestas rutrum leo. In hac habitasse platea dictumst. Aliquam erat volutpat. Duis elementum imperdiet luctus. <a href="#">Ut tristique</a>
@@ -182,7 +183,12 @@
 		  <div class="media-body">
 			<div class="panel panel-info panel-twitter">
 			  <div class="panel-heading">
-			    <h3 class="panel-title">Tweet Without Link <small>6:35pm</small><span class="label label-default group-label">Group A</span><span class="label label-default group-label">Group B</span></h3>
+			    <h3 class="panel-title">Tweet Without Link <small>6:35pm</small><span class="label label-default group-label">Group A</span><span class="label label-default group-label">Group B</span>
+
+		    	<a class="tip expiration-date" data-toggle="tooltip" data-placement"top" title="This blast is expired! Nobody can share it anymore."><span class="glyphicon glyphicon-time"></span> Expired</a>		
+
+			    </h3>
+
 			  </div>
 			  <div class="panel-body">
 			    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque justo arcu, malesuada eu magna id, egestas rutrum leo. In hac habitasse platea dictumst. Aliquam erat volutpat. Duis elementum imperdiet luctus.
@@ -212,6 +218,7 @@
 			<div class="panel panel-info panel-facebook">
 			  <div class="panel-heading">
 			    <h3 class="panel-title">Facebook Post With Link <small>3:20pm</small><span class="label label-default group-label">All</span></h3>
+
 			  </div>
 			  <div class="panel-body">
 			    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque justo arcu, malesuada eu magna id, egestas rutrum leo. In hac habitasse platea dictumst. Aliquam erat volutpat. Duis elementum imperdiet luctus. <a href="#">Ut tristique</a>
@@ -245,7 +252,7 @@
 			  </div>
 			  <div class="panel-body">
 					<div class="media">
-					  <a class="pull-left" href="images/example.png">
+					  <a class="pull-left" href="#">
 					    <img class="media-object" src="images/example.png" alt="Example Image">
 					  </a>
 					  <div class="media-body">

@@ -26,3 +26,14 @@ a.deleted-icon{
 	color: #353535;
 	margin-left: 5px;
 }
+
+.alert-info a{
+	color: #3DB5D8;
+	font-weight: 600;
+}
+
+.alert-info {
+    background-color: #F4FCFF;
+    border-color: #3db5d8;
+    color: #3DB5D8;
+}

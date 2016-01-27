@@ -11,10 +11,6 @@
 	margin-right: 20px;
 }
 
-.share-now a{
-	color: #fff;
-}
-
 .expiration-date{
 	margin-left: 13px;
     font-size: 14px;
@@ -26,4 +22,12 @@
 .expiration-date:hover{
 	color: #ffffff;
 	cursor: pointer;
+}
+
+.header-actions a{
+	color: #fff;
+}
+
+.header-action{
+	padding: 0 5px;
 }

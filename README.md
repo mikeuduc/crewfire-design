@@ -1,5 +1,13 @@
 # crewfire-design
 
+## January 27, 2016
+- Renamed index.html and blasts.html. Now campaigns-active.html
+- Created campaigns-archived.html
+- Updated blasts.css (added padding between edit and archive icons)
+- Created soloblast-archived.html (Added "This blast is archived" alert)
+- Updated soloblast.html (changed delete icon to archive icon)
+- Updated soloblast.css (updated alert style color)
+
 ## January 8, 2016 II
 - Updates to /app-admin with new leaderboard and using "Campaigns"
 - Updated blasts.html (new copy: "Campaigns" instead of "Recent Blasts")
