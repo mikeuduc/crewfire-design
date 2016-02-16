@@ -7,8 +7,10 @@
 	<link href="css/company-navbar.css" rel="stylesheet">
 	<link href="css/rankings.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
+	<link href="css/responsive-style.css" rel="stylesheet">
     <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
    	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+   	<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
 
    	<script type="text/javascript">
    		$(function(){
@@ -61,7 +63,7 @@
 
 			  <!-- Collect the nav links, forms, and other content for toggling -->
 			  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			    <ul class="nav navbar-nav">
+			    <ul class="nav navbar-nav desktop">
 			      <li><a href="campaigns.html">Campaigns</a></li>
 			      <li class="active"><a href="rankings.html">Rankings</a></li>
 			      <li><a href="profile.html">My Profile</a></li>
@@ -88,6 +90,14 @@
 			  </div><!-- /.navbar-collapse -->
 			</div><!-- /container -->
 		</nav>
+
+		<div class="nav-mobile">
+			<ul class="navbar-mobile mobile">
+				<li><a href="campaigns.html">Campaigns</a></li>
+				<li class="active"><a href="rankings.html">Rankings</a></li>
+				<li><a href="profile.html">My Profile</a></li>
+			</ul>
+		</div>
 
 	<div class="container tabbed-content">	
 
@@ -131,16 +141,28 @@
 
 
 		<div class="table-responsive col-md-8 col-md-offset-2">
-			<table class="table table-hover">
+			<table class="table table-hover" id="tableSorter">
 		        <thead>
 		          <tr>
-		            <th class="rank">Rank</th>
-		            <th>User</th>
-		            <th>Points</th>
-		            <th>Posts</th>
+		            <th class="rank arrow">Rank</th>
+		            <th class="arrow">User</th>
+		            <th class="arrow">Points</th>
+		            <th class="arrow">Posts</th>
 		          </tr>
 		        </thead>
 		        <tbody>
+		        	<tr>
+		        	  <td class="vert-align text-center">5</td>
+		        	  <td class="user-rank user-fifth"><img src="images/user.png" width="45px" class="img-circle"> Josh Klotz</td>
+		        	  <td class="vert-align">3,801</td>
+		        	  <td class="vert-align">23</td>
+		        	</tr>
+			        <tr>
+			          <td class="vert-align text-center">6</td>
+			          <td class="user-rank user-grey"><img src="images/user.png" width="45px" class="img-circle"> Matt Lilja</td>
+			          <td class="vert-align">3,240</td>
+			          <td class="vert-align">23</td>
+			        </tr>
 		          <tr>
 		            <td class="vert-align text-center">1</td>
 		            <td class="user-rank user-first"><img src="images/user.png" width="45px" class="img-circle"> Mark Shesser</td>
@@ -163,18 +185,6 @@
 		            <td class="vert-align text-center">4</td>
 		            <td class="user-rank user-fourth"><img src="images/user.png" width="45px" class="img-circle"> Alan VanToai</td>
 		            <td class="vert-align">4,102</td>
-		            <td class="vert-align">23</td>
-		          </tr>
-		          <tr>
-		            <td class="vert-align text-center">5</td>
-		            <td class="user-rank user-fifth"><img src="images/user.png" width="45px" class="img-circle"> Josh Klotz</td>
-		            <td class="vert-align">3,801</td>
-		            <td class="vert-align">23</td>
-		          </tr>
-		          <tr>
-		            <td class="vert-align text-center">6</td>
-		            <td class="user-rank user-grey"><img src="images/user.png" width="45px" class="img-circle"> Matt Lilja</td>
-		            <td class="vert-align">3,240</td>
 		            <td class="vert-align">23</td>
 		          </tr>
 		          <tr>
@@ -208,5 +218,6 @@
 		
 	</div><!-- /container -->
 
+	<script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
