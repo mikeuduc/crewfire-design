@@ -47,7 +47,12 @@ table{
 
 .navbar-brand>img {
   display: block;
-  width: 25px;
+  width: 22px;
+}
+
+.navbar-brand.full-logo > img {
+	width: 140px;
+	margin-top: 5px;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -130,7 +135,7 @@ position: relative;
 }
 
 #crewfire-logo{
-	padding: 12px 10px;
+	padding: 10px 15px 5px 10px;
 }
 
 
