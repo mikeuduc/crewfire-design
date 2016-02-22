@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/twitter-compose.css" rel="stylesheet">
+    <link href="css/instagram-compose.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -23,15 +23,16 @@
 	<div class="container">	
 		<div class="start-container col-md-10 col-md-offset-1">
 
-			<div class="alert alert-danger" role="alert">Twitter blasts can not start with an "@" symbol, or else they will be shared as direct replies, and will not show up in public Twitter feeds!</div>
-
 			<div class="start-logo">
 				<img src="images/symbol.png">
 			</div>
 
 			<div class="start-header">
-				<h1 class="text-center">Post to Twitter</h1>
-				<p>$NAME from $COMPANY-NAME has invited you to share this post on Twitter!</p>
+				<div class="heading">
+					<h1>Post to <a class="instagram-icon"></a></h1>
+				</div>
+				<p>Paul from Life In Color has invited you to share this post on Instagram!</p>
+				<p>Please save the photo below to your camera roll and switch over to your Instagram app to finish making the post.</p>
 			</div>
 			
 			<!--
@@ -39,32 +40,14 @@
 				<div class="alert alert-danger" role="alert">Please fill out the Twitter post!</div>
 			</div>
 			-->
-
-			<div class="suggested-post">
-				<p>Suggested post:</p>
-				<div class="well" id="samplePost">Here's a sample post that was suggested by a manager. http://www.CrewFire.com</div>
-				<button type="button" class="btn btn-default btn-sm pull-right" id="buttonCopy">Fill suggested content</button>
+			<div class="suggested-image">
+				<p>Suggested image:</p>
+				<img src="images/sample-image.png" class="img-thumbnail">
+				<button type="button" class="btn btn-default btn-sm save-img-btt">Save Image To Camera Roll</button>
 			</div>
-
-			<div class="twitter-timeline">
-			  <form class="start-form">
-			    <div class="form-group">
-			      <div class="avartar"></div>
-			      <textarea class="form-control" rows="5" autofocus placeholder="Create your post" id="fillArea"></textarea>
-			    </div>
-
-			    <div class="form-group button-row">
-			    <span class="tweet-counter">123</span>
-			    	<button type="submit" class="btn btn-twitter" data-toggle="modal" data-target="#myModal">
-			    		<span class="button-text tweeting-text">
-			    			<i class="fa fa-twitter"></i>
-			    			Post to Twitter
-			    		</span>
-			    	</button>
-			    	<span class="clear-both"></span>
-			    </div>
-
-			  </form>
+			<div class="suggested-post">
+				<p>Suggested Content:</p>
+				<div class="well" id="samplePost">Here's a sample post that was suggested by a manager. http://www.CrewFire.com</div>
 			</div>
 
 		</div><!-- /start-container -->
