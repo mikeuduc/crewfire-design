@@ -1,0 +1,141 @@
+body {
+	background-color: #fafafa;
+}
+
+.instagram-icon {
+	background-image: url('../images/core-sprites-6625b8.png');
+	background-repeat: no-repeat;
+	height: 28px;
+	width: 102px;
+	background-size: 268px 248px;
+	background-position: 0px -132px;
+	display: block;
+	position: absolute;
+	top: 1px;
+	right: 0px;
+}
+
+.start-logo img{
+	width: 80px;
+	margin: 0 auto 25px;
+	display: block;
+}
+
+.start-header{
+	margin-bottom: 25px;
+	border-bottom: 1px solid #eeefef;
+	padding-bottom: 20px;
+}
+
+.start-header .heading {
+	border-bottom: 1px solid #eeefef;
+	margin-bottom: 20px;
+}
+
+.start-header h1 {
+	position: relative;
+	margin: 20px auto 0;
+	padding-right: 85px;
+	padding-bottom: 20px;
+	width: 182px;
+}
+
+.start-header p{
+	font-size: 20px;
+	text-align: center;
+}
+
+.start-container p,
+.start-header p {
+	font-size: 13px;
+  margin-bottom: 2px;
+}
+
+.suggested-post .well{
+	margin-bottom: 3px;
+	font-size: 13px;
+	padding: 10px;
+}
+
+.suggested-post {
+	margin-top: 25px;
+}
+
+.suggested-post p {
+	margin-bottom: 10px;
+}
+
+.suggested-image{
+	margin-top: 40px;
+	border-bottom: 1px solid #eeefef;
+	padding-bottom: 20px;
+}
+
+.suggested-image img{
+	max-height: 250px;
+}
+
+.start-form label{
+	font-size: 16px;
+}
+
+.start-container{
+	background: #fff;
+	border-radius: 3px;
+	margin: 0 auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding: 30px 15px;
+	border: 1px solid #edeeee;
+	max-width: 500px;
+}
+
+.save-img-btt{
+	color: #ffffff;
+	background-color: #55acee;
+	border-color: #55acee;
+	display: block;
+	margin: 10px auto 0;
+}
+
+.save-img-btt:hover{
+	color: #ffffff;
+	background-color: #2379c8;
+	border-color: #2379c8;
+}
+
+.save-img-btt:active{
+	color: #ffffff;
+	background-color: #2379c8;
+	border-color: #2379c8;
+}
+
+.clear-both {
+	display: block; 
+	height: 0; 
+	clear: both;
+}
+
+.start-logo img {
+	width: 40px;
+	margin: 0 auto;
+}
+.start-header h1 {
+	font-size: 22px;
+}
+.suggested-post {
+	text-align: center;
+}
+.suggested-post button {
+	display: block;
+	margin: 15px auto 0;
+	float: none !important;
+}
+.suggested-image {
+	text-align: center;
+	margin-top: 25px;
+}
+
+.suggested-image p {
+	margin-bottom: 10px;
+}
